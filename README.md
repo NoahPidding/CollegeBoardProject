@@ -21,16 +21,16 @@ RSA is one of the first public-key cryptology and is widely used for secure data
 
 | Name | Summary |
 | ---- | ------- |
-| Nihar Marar |  |
-| Critical Thinking(5): |  |
-| 5/5 |  |
-| Communication and Presentation(5): |  |
-| 5/5 |  |
-| Collaboration(5): |  |
-| 5/5 |  |
-| Creativity(5): |  |
-| 5/5 |  |
-| Comments: |  |
+| Nihar Marar 
+Critical Thinking(5): 
+5/5 
+Communication and Presentation(5):
+5/5
+Collaboration(5):
+5/5
+Creativity(5):
+5/5
+Comments: |  |
 | ------------- |
 | Adam Holbel |  |
 | Critical Thinking(5): |  |
