@@ -20,7 +20,7 @@ RSA is the 4th option on the navigation bar.
 RSA is one of the first public-key cryptology and is widely used for secure data transmission. The acronym RSA is the initial letters of the surnames of Ron Rivest, Adi Shamir, and Leonard Adleman, who publicly described the algorithm in 1977. A user of RSA creates and then publishes a public key based on two large prime numbers, along with an auxiliary value. The prime numbers must be kept secret. More often, RSA passes encrypted shared keys for symmetric key cryptography which in turn can perform bulk encryption-decryption operations at much higher speed. It's a little similar to the Ceaser Cipher as well. The code has a few similarities too. This code does the decryption and encryption part of the project for RSA only. This code contains functions, loops, input/output, print statements, variables, arrays, and lists. It has a visual too. The html files also contains background pictures, html tags(<>), textbox, buttons, and runs its code from the main.py. 
 
 | Name | Summary |
-| :---- |: ------- |
+| :---- | :------- |
 | **Nihar Marar** |  |
 | **Adam Holbel** |  |
 | **Noah Pidding** |  |
