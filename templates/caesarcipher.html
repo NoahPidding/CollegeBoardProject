@@ -7,7 +7,7 @@
 </head>
 <body style="background-color:aqua;">
 <!-- brings in navbar from base.html -->
-{% extends "base.html" %}
+{% extends "home.html" %}
 
 <!-- incorporates the links in the navbar -->
 {% block content %}
@@ -115,7 +115,7 @@ h {
     <p><input class="textbox2" name="s" required> </p>
     <!-- shows buttons, gives them functions -->
     <br/>
-    <p><button class = "button button1" formaction = "/CeaserCipher_encrypt">Encrypt</button><button class = "button button2" formaction = "/CeaserCipher_decrypt">Decrypt</button></p>
+    <p><button class = "button button1" formaction = "/caesarcipher_encrypt">Encrypt</button><button class = "button button2" formaction = "/caesarcipher_decrypt">Decrypt</button></p>
     <br/>
     <p>The result is: </p>
     <!-- output -->
