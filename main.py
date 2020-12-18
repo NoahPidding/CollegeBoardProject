@@ -32,11 +32,11 @@ def home():
 #CeaserCipher game
 @app.route('/CeaserCipher')
 def CeaserCipher():
-    return render_template("CeaserCipher.html", links = links)
+    return render_template("caesarcipher.html", links = links)
 
 #---------------------------------------------------------------------------
 #runs CeaserCipher Game encryption
-@app.route("/CeaserCipher_encrypt", methods=['GET','POST'])
+@app.route("/caesarcipher_encrypt", methods=['GET','POST'])
 def encryptionCC():
     if request.method == 'POST':
         form = request.form
@@ -62,11 +62,11 @@ def encryptionCC():
             return result
         result1=encryptionCC1(text1,s)
         encrypted="".join(result1)
-        return render_template("CeaserCipher.html", display = encrypted)
-    return redirect("/CeaserCipher")
+        return render_template("caesarcipher.html", display = encrypted)
+    return redirect("/caesarcipher")
 #----------------------------------------------------------------------------------------------------------
 #runs CeaserCipher Game decryption
-@app.route("/CeaserCipher_decrypt", methods=['GET','POST'])
+@app.route("/caesarcipher_decrypt", methods=['GET','POST'])
 def decryptionCC():
 
     if request.method == 'POST':
@@ -93,18 +93,18 @@ def decryptionCC():
                 decrypted_text += chr(ord(encrp_msg[i]) - decrp_key)
 
         decrypted="".join(decrypted_text)
-        return render_template("CeaserCipher.html", display = decrypted)
-    return redirect("/CeaserCipher")
+        return render_template("caesarcipher.html", display = decrypted)
+    return redirect("/caesarcipher")
 
 #Caesar Cipher Information Page
 @app.route('/CaesarCipherInfo')
 def CaesarCipherInfo():
-    return render_template("CaesarCipherInfo.html", links = links)
+    return render_template("caesarcipherinfo.html", links = links)
 #------------------------------------------------------------------------------------------------------------
 #binary game
 @app.route('/binary')
 def binaryEX():
-    return render_template("Binary.html", links = links)
+    return render_template("binary.html", links = links)
 
 #runs Binary Cipher encryption
 @app.route("/bin_encrypt", methods=['GET','POST'])
@@ -132,7 +132,7 @@ def decryption():
 
 @app.route("/BinaryInfo")
 def BinaryInfo():
-    return render_template("BinInfo.html")
+    return render_template("binaryinfo.html")
 
 #rsa demonstration
 #default RSA (rsa encrypt)
@@ -169,9 +169,9 @@ def rsaKeyGen():
         encrypted = rsa.rsa(message, pubKey1, pubKey2)
         encrypted = encrypted[0]
         encrypted = ''.join(encrypted)
-        return render_template ("keyGen.html", display = "Encrypted", display1 = "Public Key 1", display2 = "Public Key 2", display3 = "Private Key", output = encrypted, pubKey1 = pubKey1, pubKey2 = pubKey2, privKey = privKey, op1 = "Encrypt", op2 = "Decrypt", link1 = "/rsa", link2 = "/rsa/decrypt")
+        return render_template ("keygen.html", display = "Encrypted", display1 = "Public Key 1", display2 = "Public Key 2", display3 = "Private Key", output = encrypted, pubKey1 = pubKey1, pubKey2 = pubKey2, privKey = privKey, op1 = "Encrypt", op2 = "Decrypt", link1 = "/rsa", link2 = "/rsa/decrypt")
     else:
-        return render_template ("keyGen.html", op1 = "Encrypt", op2 = "Decrypt", link1 = "/rsa", link2 = "/rsa/decrypt")
+        return render_template ("keygen.html", op1 = "Encrypt", op2 = "Decrypt", link1 = "/rsa", link2 = "/rsa/decrypt")
 
 #rsa decrypt
 @app.route ('/rsa/decrypt', methods = ["POST", "GET"])
@@ -195,7 +195,7 @@ def rsaDecrypt():
 #rsa info
 @app.route('/about-rsa')
 def rsaAbout():
-    return render_template("rsaAbout.html")
+    return render_template("rsainfo.html")
 
 #run file
 if __name__ == "__main__":
