@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pig Latin Information</title>
+
+    <!-- incorporates style.css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- incorporates style of text -->
+    <style>
+
+    </style>
+</head>
+<body>
+<!-- brings in the navbar -->
+{% extends "home.html" %}
+
+<!-- all the text that is in the page -->
+{% block content %}
+<h>About Pig Latin</h>
+<p></p>
+<p> </p>
+
+
+<h>References</h>
+<!-- embedding another website -->
+<iframe src = "" class="center" title = "More Info" width="55%" height = "350" style = "border:1px solid black"></iframe>
+<h> </h>
+<p> </p>
+<!-- embedding another website -->
+<iframe src = "" class="center" title = "Python Code" width = "55%" height = "650" style = "border:1px solid black"></iframe>
+<h> </h>
+{% endblock %}
+</body>
+</html>

@@ -197,6 +197,16 @@ def rsaDecrypt():
 def rsaAbout():
     return render_template("rsainfo.html")
 
+#Pig Latin info
+@app.route('/PigLatininfo')
+def PigLatininfo():
+    return render_template("PigLatininfo.html")
+
+#Morse Code info
+@app.route('/Morsecodeinfo')
+def Morsecodeinfo():
+    return render_template("Morsecodeinfo.html")
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)
