@@ -197,6 +197,31 @@ def rsaDecrypt():
 def rsaAbout():
     return render_template("rsainfo.html")
 
+#Pig Latin game
+@app.route('/PigLatin')
+def PigLatin():
+    return render_template("PigLatin.html", links = links)
+
+#runs Pig Latin Cipher encryption
+@app.route("/PL_encrypt", methods=['GET','POST'])
+def encryptionPL():
+    if request.method == 'POST':
+        form = request.form
+        PL_text = form["PL1"]
+        result1 = ''.join(format(ord(i), 'b') for i in PL_text)
+        return render_template("PigLatin.html", display = result1)
+    return redirect("/PigLatin")
+
+#runs Pig Latin Cipher decryption
+@app.route("/PL_decrypt", methods=['GET','POST'])
+def decryptionPL():
+    if request.method == 'POST':
+        form = request.form
+        PL_text = form["PL1"]
+        string = ' '
+        return render_template("PigLatin.html", display = string)
+    return redirect("/PigLatin")
+
 #Pig Latin info
 @app.route('/PigLatininfo')
 def PigLatininfo():
