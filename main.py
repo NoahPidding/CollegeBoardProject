@@ -250,6 +250,11 @@ def Morsecodeinfo():
 def QuizGame():
     return render_template("QuizGame.html")
 
+#Database
+@app.route('/database')
+def Database():
+    return render_template("database.html")
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)
