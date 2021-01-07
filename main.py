@@ -232,6 +232,11 @@ def PigLatininfo():
 def Morsecodeinfo():
     return render_template("Morsecodeinfo.html")
 
+#Quiz Game
+@app.route('/QuizGame')
+def QuizGame():
+    return render_template("QuizGame.html")
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)

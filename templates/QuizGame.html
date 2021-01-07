@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <!-- creates the looks of the buttons -->
+    <!-- https://i.pinimg.com/originals/76/60/4b/76604b143429d4225e5784ba0d9d2aef.jpg -->
+    <style>
+
+    body {
+            background-image: url();
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+}
+    h1 {color: blue;}
+    p {
+        color: mediumspringgreen;
+        font-size: 150%}
+
+    .button {
+        border: 1px solid black;
+         color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     .button1 {
+        background-color: #DC143C;
+     }
+     .button2 {
+        background-color: #20B2AA;
+     }
+
+     .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     .textbox1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     .output {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+    </style>
+
+</head>
+<body >
+
+<!-- brings in navbar from base.html -->
+{% extends "home.html" %}
+
+{% block content %}
+
+
+<!-- Explains what this page does -->
+<fieldset>
+
+
+        <legend>Question 1: What Cipher always ends a word with ay?</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+
+    <legend>Question 2: Encrypt the words "Hello There, General Kenobi!" in the Caesar Cipher with a shift pattern being 6.</legend>
+    <div>
+        <input type="radio" name="conf" id="answer1" value="AHG" required="">
+        <label for="answer1">Accessing Higher Ground</label>
+    </div>
+    <div>
+        <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+        <label for="answer2">AHEAD</label>
+    </div>
+    <div>
+        <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+        <label for="answer3">EDUCAUSE</label>
+    </div>
+
+
+        <legend>Question 3: What was the first Cipher ever created?</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+
+        <legend>Question 4: Why do we use Ciphers and why are they so important?</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+
+        <legend>Question 5: What Cipher uses sound?</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+
+        <legend>Question 6: Decrypt "10010001100101110110011011001101111" from Binary to English.</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+
+        <legend>Question 7: What was the purpose of the Caesar Cipher?</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+            <legend>Question 8: How was Pig Latin created?</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+
+        <legend>Question 9: Why is the most secure Cipher in the world, what is the least(Most Secure, Least Secure)</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+
+        <legend>Question 10: Which keys do you use to decrypt in RSA?</legend>
+        <div>
+            <input type="radio" name="conf" id="answer1" value="AHG" required="">
+            <label for="answer1">Accessing Higher Ground</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer2" value="AHEAD" required="">
+            <label for="answer2">AHEAD</label>
+        </div>
+        <div>
+            <input type="radio" name="conf" id="answer3" value="EDUCAUSE" required="">
+            <label for="answer3">EDUCAUSE</label>
+        </div>
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+<p>The result is: </p>
+
+<!-- output -->
+<p class="output">{{ display }}</p>
+
+
+</form>
+{% endblock %}
+</body>
+</html>
