@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>RenArt</title>
     <link rel="shortcut icon" href="a198cd0c_e2f0_4c99_ba51_342624a24db9_WP4_icon.ico" type="image/x-icon"/>
     <link href = "https://fonts.googleapis.com/css?family=Nunito+Sans:400,900&display=swap" rel="stylesheet">
@@ -53,12 +54,14 @@ a {
 
 h2, h1, p {
   font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
 }
-h1{
-  text-align: center;
+h1:hover {
+  animation-name: artshadow;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  animation-delay: 0.1s;
 }
-
 
 @keyframes artshadow {
   from {}
@@ -71,15 +74,10 @@ h1 {
 </style>
 </head>
 <body>
-<!-- brings in the navbar -->
-{% extends "home.html" %}
-
-<!-- all the text that is in the page -->
-{% block content %}
-<h1><b>RenArt</b></h1>
+<h1><a href="https://micahlt.github.io/renart/"><b>RenArt</b></a></h1>
 <h2>search artworks by name, artist, and more</h2>
 <div class="centerenter">
-    <center><input type="text" id="artInput" onkeyup="artFunction()" placeholder="name, date, artist..." title="Work search"></center>
+    <input type="text" id="artInput" onkeyup="artFunction()" placeholder="name, date, artist..." title="Work search">
 </div>
 <div class="tablesearch">
     <table id="artTable" align="center">
@@ -213,6 +211,5 @@ h1 {
   }
 }
 </script>
-{% endblock %}
 </body>
 </html>
