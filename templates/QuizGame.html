@@ -9,56 +9,75 @@
     <!-- https://i.pinimg.com/originals/76/60/4b/76604b143429d4225e5784ba0d9d2aef.jpg -->
     <style>
 
-    body {
-            background-image: url();
-            background-size: cover;
-            background-repeat: no-repeat;
+    @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
-        }
+body{
+	font-size: 20px;
+	font-family: 'Work Sans', sans-serif;
+	color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
 }
-    h1 {color: blue;}
-    p {
-        color: mediumspringgreen;
-        font-size: 150%}
+h1{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #444;
+  color: #fff;
+}
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{
+  font-family: 'Work Sans', sans-serif;
+	font-size: 22px;
+	background-color: #279;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+button:hover{
+	background-color: #38a;
+}
 
-    .button {
-        border: 1px solid black;
-         color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-     }
 
-     .button1 {
-        background-color: #DC143C;
-     }
-     .button2 {
-        background-color: #20B2AA;
-     }
 
-     .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-     }
 
-     .textbox1 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-     }
-     .output {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-     }
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
 
     </style>
 
@@ -70,195 +89,298 @@
 
 {% block content %}
 
+<h1>Quiz on Ciphers</h1>
+<div class="quiz-container">
+    <div id="quiz"></div>
+</div>
+<button id="previous">Previous Question</button>
+<button id="next">Next Question</button>
+<button id="submit">Submit Quiz</button>
+<div id="feedback"></div>
+<div id="results"></div>
 
-<!-- Explains what this page does -->
-<fieldset>
+<script>
+    (function(){
+  // Functions
+  function buildQuiz(){
+    // variable to store the HTML output
+    const output = [];
 
-        <legend>Question 1: What Cipher always ends a word with ay?</legend>
-        <div>
-            <input type="radio" name="question1" id="q1answer1" value="RSA" required="">
-            <label for="q1answer1">RSA</label>
-        </div>
-        <div>
-            <input type="radio" name="question1" id="q1answer2" value="Caesar Cipher" required="">
-            <label for="q1answer2">Caesar Cipher</label>
-        </div>
-        <div>
-            <input type="radio" name="question1" id="q1answer3" value="Pig Latin" required="">
-            <label for="q1answer3">Pig Latin</label>
-        </div>
-        <div>
-            <input type="radio" name="question1" id="q1answer4" value="Morse Code" required="">
-            <label for="q1answer4">Morse Code</label>
-        </div>
+    // for each question...
+    myQuestions.forEach(
+      (currentQuestion, questionNumber) => {
 
-        <legend>Question 2: Encrypt the words "Hello There, General Kenobi!" in the Caesar Cipher with a shift pattern being 6.</legend>
-        <div>
-            <input type="radio" name="question2" id="q2answer1" value="Mjqqt Ymjwj, Ljsjwfq Pjstgn!" required="">
-            <label for="q2answer1">Mjqqt Ymjwj, Ljsjwfq Pjstgn!</label>
-        </div>
-        <div>
-            <input type="radio" name="question2" id="q2answer2" value="Nkrru Znkxk, Mktkxgr Qktuho!" required="">
-            <label for="q2answer2">Nkrru Znkxk, Mktkxgr Qktuho!</label>
-        </div>
-        <div>
-            <input type="radio" name="question2" id="q2answer3" value="Wtaad Iwtgt, Vtctgpa Ztcdqx!" required="">
-            <label for="q2answer3">Wtaad Iwtgt, Vtctgpa Ztcdqx!</label>
-        </div>
-        <div>
-            <input type="radio" name="question2" id="q2answer4" value="Ebiil Qebob, Dbkboxi Hbklyf!" required="">
-            <label for="q2answer4">Ebiil Qebob, Dbkboxi Hbklyf!</label>
-        </div>
+        // variable to store the list of possible answers
+        const answers = [];
 
-        <legend>Question 3: What was the first Cipher device ever created?</legend>
-        <div>
-            <input type="radio" name="question3" id="q3answer1" value="Scytale" required="">
-            <label for="q3answer1">Scytale</label>
-        </div>
-        <div>
-            <input type="radio" name="question3" id="q3answer2" value="Telegraph" required="">
-            <label for="q3answer2">Telegraph</label>
-        </div>
-        <div>
-            <input type="radio" name="question3" id="q3answer3" value="Phone" required="">
-            <label for="q3answer3">Phone</label>
-        </div>
-        <div>
-            <input type="radio" name="question3" id="q3answer4" value="Fialka" required="">
-            <label for="q3answer4">Fialka</label>
-        </div>
+        // and for each available answer...
+        for(letter in currentQuestion.answers){
 
-        <legend>Question 4: Why do we use Ciphers?</legend>
-        <div>
-            <input type="radio" name="question4" id="q4answer1" value="For Communication" required="">
-            <label for="q4answer1">For Communication</label>
-        </div>
-        <div>
-            <input type="radio" name="question4" id="q4answer2" value="For Fun" required="">
-            <label for="q4answer2">For Fun</label>
-        </div>
-        <div>
-            <input type="radio" name="question4" id="q4answer3" value="For Security" required="">
-            <label for="q4answer3">For Security</label>
-        </div>
-        <div>
-            <input type="radio" name="question4" id="q4answer4" value="All of the Above" required="">
-            <label for="q4answer4">All of the Above</label>
-        </div>
+          // ...add an HTML radio button
+          answers.push(
+            `<label>
+              <input type="radio" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answers[letter]}
+            </label>`
+          );
+        }
 
-        <legend>Question 5: What Cipher uses sound?</legend>
-        <div>
-            <input type="radio" name="question5" id="q5answer1" value="Playfair Cipher" required="">
-            <label for="q5answer1">Playfair Cipher</label>
-        </div>
-        <div>
-            <input type="radio" name="question5" id="q5answer2" value="RSA" required="">
-            <label for="q5answer2">RSA</label>
-        </div>
-        <div>
-            <input type="radio" name="question5" id="q5answer3" value="Morse Code" required="">
-            <label for="q5answer3">Morse Code</label>
-        </div>
-        <div>
-            <input type="radio" name="question5" id="q5answer4" value="Binary" required="">
-            <label for="q5answer4">Binary</label>
-        </div>
+        // add this question and its answers to the output
+        output.push(
+          `<div class="slide">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join("")} </div>
+          </div>`
+        );
+      }
+    );
 
-        <legend>Question 6: Decrypt "10010001100101110110011011001101111" from Binary to English.</legend>
-        <div>
-            <input type="radio" name="question6" id="q6answer1" value="Hello" required="">
-            <label for="q6answer1">Hello</label>
-        </div>
-        <div>
-            <input type="radio" name="question6" id="q6answer2" value="World" required="">
-            <label for="q6answer2">World</label>
-        </div>
-        <div>
-            <input type="radio" name="question6" id="q6answer3" value="Cipher" required="">
-            <label for="q6answer3">Cipher</label>
-        </div>
-        <div>
-            <input type="radio" name="question6" id="q6answer4" value="Code" required="">
-            <label for="q6answer4">Code</label>
-        </div>
+    // finally combine our output list into one string of HTML and put it on the page
+    quizContainer.innerHTML = output.join('');
+  }
 
-        <legend>Question 7: What was the purpose of the Caesar Cipher?</legend>
-        <div>
-            <input type="radio" name="question7" id="q7answer1" value="For Security" required="">
-            <label for="q7answer1">For Security</label>
-        </div>
-        <div>
-            <input type="radio" name="question7" id="q7answer2" value="To have fun" required="">
-            <label for="q7answer2">To have fun</label>
-        </div>
-        <div>
-            <input type="radio" name="question7" id="q7answer3" value="To replace each letter with another" required="">
-            <label for="q7answer3">To replace each letter with another</label>
-        </div>
-        <div>
-            <input type="radio" name="question7" id="q7answer4" value="Julius Caesar created it to communicate with his generals" required="">
-            <label for="q7answer4">Julius Caesar created it to communicate with his generals</label>
-        </div>
+  function showResults(){
+    showingResults = true;
+    // gather answer containers from our quiz
+    const answerContainers = quizContainer.querySelectorAll('.answers');
 
-        <legend>Question 8: How was Pig Latin created?</legend>
-        <div>
-            <input type="radio" name="question8" id="q8answer1" value="By little kids having fun" required="">
-            <label for="q8answer1">By little kids having fun</label>
-        </div>
-        <div>
-            <input type="radio" name="question8" id="q8answer2" value="From a boardgame" required="">
-            <label for="q8answer2">From a boardgame</label>
-        </div>
-        <div>
-            <input type="radio" name="question8" id="q8answer3" value="From a rap song" required="">
-            <label for="q8answer3">From a rap song</label>
-        </div>
-        <div>
-            <input type="radio" name="question8" id="q8answer4" value="From a TV show" required="">
-            <label for="q8answer4">From a TV show</label>
-        </div>
+    // keep track of user's answers
+    let numCorrect = 0;
 
-        <legend>Question 9: What is the most secure Cipher in the world, what is the least(Most Secure, Least Secure)</legend>
-        <div>
-            <input type="radio" name="question9" id="q9answer1" value="PGP, DES" required="">
-            <label for="q9answer1">PGP, WEP</label>
-        </div>
-        <div>
-            <input type="radio" name="question9" id="q9answer2" value="RSA, DES" required="">
-            <label for="q9answer2">RSA, DES</label>
-        </div>
-        <div>
-            <input type="radio" name="question9" id="q9answer3" value="AES, Caesar Cipher" required="">
-            <label for="q9answer3">AES, Caesar Cipher</label>
-        </div>
-        <div>
-            <input type="radio" name="question9" id="q9answer4" value="Twofish, TripleDES" required="">
-            <label for="q9answer4">Twofish, TripleDES</label>
-        </div>
+    // for each question...
+    myQuestions.forEach( (currentQuestion, questionNumber) => {
 
-        <legend>Question 10: Which keys do you use to decrypt in RSA?</legend>
-        <div>
-            <input type="radio" name="question10" id="q10answer1" value="Public Key 1, Public Key 2" required="">
-            <label for="q10answer1">Public Key 1, Public Key 2</label>
-        </div>
-        <div>
-            <input type="radio" name="question10" id="q10answer2" value="Public Key 2, Private Key" required="">
-            <label for="q10answer2">Public Key 2, Private Key</label>
-        </div>
-        <div>
-            <input type="radio" name="question10" id="q10answer3" value="Public Key 1, Private Key" required="">
-            <label for="q10answer3">Public Key 1, Private Key</label>
-        </div>
-        <div>
-            <input type="radio" name="question10" id="q10answer4" value="Public Key 1, Public Key 2, Private Key" required="">
-            <label for="q10answer4">Public Key 1, Public Key 2, Private Key</label>
-        </div>
+      // find selected answer
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-</fieldset>
+      // if answer is correct
+      if(userAnswer === currentQuestion.correctAnswer){
+        // add to the number of correct answers
+        numCorrect++;
+        questionCorrect[questionNumber] = true;
+        // color the answers green
+        answerContainers[questionNumber].style.color = 'lightgreen';
+      }
+      // if answer is wrong or blank
+      else{
+        // color the answers red
+        answerContainers[questionNumber].style.color = 'red';
+        questionCorrect[questionNumber] = false;
 
-<p>The result is: </p>
 
-<!-- output -->
+
+      }
+
+    });
+
+    // show number of correct answers out of total
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
+
+  }
+
+  function showSlide(n) {
+
+    slides[currentSlide].classList.remove('active-slide');
+    slides[n].classList.add('active-slide');
+    currentSlide = n;
+     if (showingResults == true && questionCorrect[currentSlide] == false) {
+        feedbackContainer.innerHTML = `You got this question wrong. Feedback: ${myFeedback[currentSlide]}`;
+     }
+     if (showingResults == true && questionCorrect[currentSlide] == true) {
+        feedbackContainer.innerHTML = "";
+     }
+    if(currentSlide === 0){
+      previousButton.style.display = 'none';
+    }
+    else{
+      previousButton.style.display = 'inline-block';
+    }
+    if(currentSlide === slides.length-1){
+      nextButton.style.display = 'none';
+      submitButton.style.display = 'inline-block';
+    }
+    else{
+      nextButton.style.display = 'inline-block';
+      submitButton.style.display = 'none';
+    }
+  }
+
+  function showNextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function showPreviousSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  // Variables
+  var showingResults = false;
+  var questionCorrect = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  ""
+  ];
+  const myFeedback = [
+  "Pig Latin always ends a word with -ay.",
+  "The Caesar Cipher has a shift pattern of 6 in this case, so shift each letter over 6 times. For example A=G.",
+  "Scytale was the first cipher device created by the Ancient Greeks. It was used for basic cryptology and encoded messages.",
+  "Ciphers are useful for communication, security, and it's just fun to use them.",
+  "The telegraphs on battleships were the first method to use morse code. Messages were encoded in long and short beeps.",
+  "ASCII encryption converts numbers to letters starting from 65 for captial A and 98 for lowercase a.",
+  "Caesar created the cipher to communicate with his generals. It was then used behind his back to plan to assassinate him.",
+  "In England, kids wanted to create their own language, and pig latin was born!",
+  "AES-256 is the most secure industry standard encryption method today. The caesar cipher has only 26 keys, and is very insecure.",
+  "We use Public Key 1 and the private key to decrypt RSA encoded data."
+  ];
+  const quizContainer = document.getElementById('quiz');
+  const resultsContainer = document.getElementById('results');
+  const feedbackContainer = document.getElementById('feedback');
+  const submitButton = document.getElementById('submit');
+  const myQuestions = [
+    {
+      question: "Question 1: What Cipher always ends a word with ay?",
+      answers: {
+        a: "RSA",
+        b: "Caesar Cipher",
+        c: "Pig Latin",
+        d: "Morse Code"
+      },
+      correctAnswer: "c",
+      feedback: "Pig Latin always ends a word with -ay."
+    },
+    {
+      question: "Question 2: Encrypt the words 'Hello There, General Kenobi!' in the Caesar Cipher with a shift pattern being 6.",
+      answers: {
+        a: "Mjqqt Ymjwj, Ljsjwfq Pjstgn!",
+        b: "Nkrru Znkxk, Mktkxgr Qktuho!",
+        c: "Wtaad Iwtgt, Vtctgpa Ztcdqx!",
+        d: "Ebiil Qebob, Dbkboxi Hbklyf!"
+      },
+      correctAnswer: "b",
+      feedback: "The Caesar Cipher has a shift pattern of 6 in this case, so shift each letter over 6 times. For example A=G."
+    },
+    {
+      question: "Question 3: What was the first Cipher device ever created?",
+      answers: {
+        a: "Scytale",
+        b: "Telegraph",
+        c: "Phone",
+        d: "Fialka"
+      },
+      correctAnswer: "a",
+      feedback: "Scytale was the first cipher device created by the Ancient Greeks. It was used for basic cryptology and encoded messages."
+    },
+    {
+      question: "Question 4: Why do we use Ciphers?",
+      answers: {
+        a: "For Communication",
+        b: "For Fun",
+        c: "For Security",
+        d: "All of the Above"
+      },
+      correctAnswer: "d",
+      feedback: "Ciphers are useful for communication, security, and it's just fun to use them."
+    },
+    {
+      question: "Question 5: What Cipher uses sound?",
+      answers: {
+        a: "Playfair Cipher",
+        b: "RSA",
+        c: "Morse Code",
+        d: "Binary"
+      },
+      correctAnswer: "c",
+      feedback: "The telegraphs on battleships were the first method to use morse code. Messages were encoded in long and short beeps."
+    },
+    {
+      question: "Question 6: Decrypt '10010001100101110110011011001101111' from Binary to English.",
+      answers: {
+        a: "Hello",
+        b: "World",
+        c: "Cipher",
+        d: "Code"
+      },
+      correctAnswer: "a",
+      feedback: "ASCII encryption converts numbers to letters starting from 65 for captial A and 98 for lowercase a."
+    },
+    {
+      question: "Question 7: What was the purpose of the Caesar Cipher?",
+      answers: {
+        a: "For Security",
+        b: "To have fun",
+        c: "To replace each letter with another",
+        d: "Julius Caesar created it to communicate with his generals"
+      },
+      correctAnswer: "d",
+      feedback: "Caesar created the cipher to communicate with his generals. It was then used behind his back to plan to assassinate him."
+    },
+    {
+      question: "Question 8: How was Pig Latin created?",
+      answers: {
+        a: "By little kids having fun",
+        b: "From a boardgame",
+        c: "From a rap song",
+        d: "From a TV show"
+      },
+      correctAnswer: "a",
+      feedback: "In England, kids wanted to create their own language, and pig latin was born!"
+    },
+    {
+      question: "Question 9: What is the most secure Cipher in the world, what is the least(Most Secure, Least Secure)",
+      answers: {
+        a: "PGP, WEP",
+        b: "RSA, DES",
+        c: "AES, Caesar Cipher",
+        d: "Twofish, TripleDES"
+      },
+      correctAnswer: "c",
+      feedback: "AES-256 is the most secure industry standard encryption method today. The caesar cipher has only 26 keys, and is very insecure."
+    },
+    {
+      question: "Question 10: Which keys do you use to decrypt in RSA?",
+      answers: {
+        a: "Public Key 1, Public Key 2",
+        b: "Public Key 2, Private Key",
+        c: "Public Key 1, Private Key",
+        d: "Public Key 1, Public Key 2, Private Key"
+      },
+      correctAnswer: "c",
+      feedback: "We use Public Key 1 and the private key to decrypt RSA encoded data."
+    }
+  ];
+
+  // Kick things off
+  buildQuiz();
+
+  // Pagination
+  const previousButton = document.getElementById("previous");
+  const nextButton = document.getElementById("next");
+  const slides = document.querySelectorAll(".slide");
+  let currentSlide = 0;
+
+  // Show the first slide
+  showSlide(currentSlide);
+
+  // Event listeners
+  submitButton.addEventListener('click', showResults);
+  previousButton.addEventListener("click", showPreviousSlide);
+  nextButton.addEventListener("click", showNextSlide);
+})();
+
+</script>
+
+
 <p class="output">{{ display }}</p>
 
 {% endblock %}
