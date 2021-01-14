@@ -38,6 +38,40 @@ Pig Latin is a pretty basic language that involves a simple formula for translat
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
 # Link to Code
+Noah's code:
+#runs Pig Latin Cipher encryption
+@app.route("/PL_encrypt", methods=['GET','POST'])
+def encryptionPL():
+    if request.method == 'POST':
+        form = request.form
+        #!/usr/bin/env python
+        # This program translates a string to Pig Latin
+        sentence = form["PL1"]
+        vowels = ['a', 'e', 'i', 'o', 'u']
+        # Split sentence into a list of words
+        words = sentence.split()
+        for i, word in enumerate(words):
+            # Split each word into a list of letters
+            letters = list(word)
+            first_vowel = 0
+            # Loop through letters of the word to find the first vowel
+            for j, letter in enumerate(letters):
+                if letter.lower() in vowels:
+                    first_vowel = j
+                    break
+            # Add 'yay' if the word starts with a vowel
+            if first_vowel == 0:
+                word = word + "yay"
+            # Otherwise, move the beginning consonants + 'ay' to the end of the word
+            else:
+                word = word[first_vowel:len(word)] + word[0:first_vowel] + "ay"
+            # Replace the English word with the Pig Latin word in the list
+            words[i] = word.lower()
+        # Reconstructs a new Pig Latin sentence from the list of words
+        sentence = " ".join(words)
+        return render_template("PigLatin.html", display = sentence)
+    return redirect("/PigLatin")
+With this code, we were able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. We used POST to use python code we tested in REPL, and implement it into the main.py file using POST in order to get it to work on the HTML page. 
 
 
 # Instructions for Running
