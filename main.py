@@ -240,6 +240,39 @@ def encryptionPL():
 def PigLatininfo():
     return render_template("PigLatininfo.html")
 
+#Morse Code
+@app.route('/Morsecode')
+def Morsecode():
+    return render_template("Morsecode.html")
+
+#runs Pig Latin Cipher encryption
+@app.route("/MC_encrypt", methods=['GET','POST'])
+def encryptionMC():
+    if request.method == 'POST':
+        form = request.form
+        while True:
+            encryptoutput =(".- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --.. ")
+            alphabet = list(encryptoutput.split(" "))
+            encryptinput=('a b c d e f g h i j k l m n o p q r s t u v w x y z ' )
+            encrypt=list(encryptinput.split(" "))
+            morse=""
+            userinput= form["MC1"]
+
+            for i in userinput.lower():
+                if i.isspace():
+                    morse+=" / "
+
+                else:
+                    counter=-1
+                    while i != encrypt[counter]:
+                        counter+=1
+                        if i == encrypt[counter]:
+                            morse+=alphabet[counter] + " "
+            sentence="Morse code: "+morse
+            return render_template("Morsecode.html", display = sentence)
+        return redirect("/Morsecode")
+
+
 #Morse Code info
 @app.route('/Morsecodeinfo')
 def Morsecodeinfo():
