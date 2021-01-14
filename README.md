@@ -60,3 +60,10 @@ With the code under this app route, located in the main.py file, I was able to r
 
 
 # Grading
+## Noah 19/20
+Noah completed his assignment of implementing the Pig Latin cipher as well as the information pages. 
+## Nihar 20/20
+
+## Adam 17/20
+
+## Rivan 18/20
