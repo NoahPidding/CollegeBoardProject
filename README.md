@@ -43,7 +43,7 @@ Noah's code:
 #runs Pig Latin Cipher encryption
 @app.route("/PL_encrypt", methods=['GET','POST'])
 
-With this code, we were able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. We used POST to use python code we tested in REPL, and implement it into the main.py file using POST in order to get it to work on the HTML page. 
+With the code under this app route, located in the main.py file, I was able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. I used python code I tested in REPL to implement it into the main.py file using POST in order to get it to work and running on the HTML page. 
 
 
 # Instructions for Running
