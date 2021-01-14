@@ -8,6 +8,7 @@ General Kenobi (COUGH COUGH)
 2) Completed the quiz game, including 10 questions and multiple options for answers on each question based on the different ciphers and their information pages
 3) Added a databse (in progress)
 4) We were able to successfully deploy it
+5) Completed the Pig Latin cipher and information page
 
 # CypherCryptoWebsite
 # Main.py
