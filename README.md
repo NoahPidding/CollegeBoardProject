@@ -70,4 +70,4 @@ Nihar has done a lot for the team, as he is the most experienced coder out of us
 Adam was able to complete the code for the Morse code cipher in a REPL, however he could not get his Intellij to work, and as a result was unable to make any commits to the project. Because of this he was forced to email the code to others who did have Intellij up and running, and have them implement the code for him. 
 
 ## Rivan 18/20
-Rivan helped
+Rivan was able to add more buttons onto the navigation bar we currently had, in which a Pig Latin, Morse code, quiz game and database buttons were added. He also helped a little bit with the addition of the quiz game, however Nihar was the main contributor on that assignment. 
