@@ -38,7 +38,7 @@ Pig Latin is a pretty basic language that involves a simple formula for translat
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
 # Link to Code
-Noah's code:
+## Noah's code:
 
 #runs Pig Latin Cipher encryption
 @app.route("/PL_encrypt", methods=['GET','POST'])
