@@ -1,11 +1,12 @@
 #1843496- Rivan Nayak
 # CollegeBoardProject
-Hello There My Young Padawan 
-General Kenobi (COUGH COUGH)
-It's over Anikin, I have the high ground
-You Underestimate my power
-Don't try it
-Screams in agony
+Nice call my Young Padawan.
+Hello There.
+General Kenobi. (COUGH COUGH).
+It's over Anikin, I have the high ground.
+You Underestimate my power.
+Don't try it.
+Screams in agony.
 "I HATE YOU"
 
 # Team Goals Completed
@@ -69,7 +70,7 @@ With the code under this app route, located in the main.py file, I was able to r
 Noah completed his assignment of implementing the Pig Latin cipher as well as the information pages. He also helped with other parts of the website including some of the styling and format. Being the scrum master, Noah also monitored the scrum board, assigning scrum members to do different tasks and setting goals for the team to complete before the deadline. 
 
 ## Nihar 20/20
-Nihar has done a lot for the team, as he is the most experienced coder out of us all. He has helped implement both ciphers into the project html pages using POST, while also creating the new quiz game, which included 10 questions and different options for the answers for each question. He was also able to get the website deployed and running, and has proved very useful and helpful over the weeks, making several commits to the project.  
+Nihar has done a lot for the team, as he is the most experienced coder out of us all. He has helped implement both ciphers into the project html pages using POST, while also creating the new quiz game, which included 10 questions and different options for the answers for each question. He also added the database which he is currently working on. He was also able to get the website deployed and running, and has proved very useful and helpful over the weeks, making several big and important commits to the project.  
 
 ## Adam 17/20
 Adam was able to complete the code for the Morse code cipher in a REPL, however he could not get his Intellij to work, and as a result was unable to make any commits to the project. Because of this he was forced to email the code to others who did have Intellij up and running, and have them implement the code for him. 
