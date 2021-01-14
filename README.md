@@ -2,6 +2,15 @@
 # CollegeBoardProject
 Hello There My Young Padawan 
 General Kenobi (COUGH COUGH)
+
+# Team Goals Completed
+1) Added more buttons to navigation bar
+2) Completed the Pig Latin cipher and information page
+3) Completed the Morse code cipher and information page
+4) Completed quiz game, including 10 questions and multiple options for answers on each question based on the different ciphers and their information pages
+5) Added a databse (in progress)
+6) We were able to successfully deploy it
+
 # CypherCryptoWebsite
 # Main.py
 This is where the flask runs and where we run all of our python code in our website. We were able to use our python code for the ciphers and run them on the website without having to use html. The main.py also runs everything with the app.routes. Very important for our website.  
@@ -26,3 +35,28 @@ Morse Code is the 6th option on the navigation bar.
 # Pig Latin
 Pig Latin is the 7th option on the navigation bar. 
 Pig Latin is a pretty basic language that involves a simple formula for translating words or phrases. To translate from English to Pig Latin, you are to remove everything before the first vowel of the word, moving it to the end, and adding an "ay" at the end of the word. An example of this would be "hello" turning into "ellohay". If the word begins with a vowel, then all you have to do is add "yay" to the end of the word. This means "apple" would turn into "appleyay". For the encryption of Pig Latin, it wasn't too hard. The way we approached it, was by first defining all the vowels. We then used for loops to loop through the word(s) listed by the user, to find the first vowel in each word. We used if and else statements to tell if the vowel was at the beginning, then "yay" would be added on to the end, otherwise everything before the first vowel, along with "ay" would go at the end. Decryption on the otherhand was found to be nearly impossible, as words could be the exactly the same in Pig Latin, but different in English. For example, the words smile and miles are the exact same in Pig Latin, being "ilesmay". The format of the Pig Latin cipher page and the info page are similar to the other ciphers, as it provides an encryption option on the cipher page, as well as some information about Pig Latin, some resources we used and how we coded it on the information page. 
+
+# Scrum Board Overview
+Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
+
+# Link to Code
+## Noah's code:
+
+#runs Pig Latin Cipher encryption
+@app.route("/PL_encrypt", methods=['GET','POST'])
+
+With the code under this app route, located in the main.py file, I was able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. I used python code I tested in REPL to implement it into the main.py file using POST in order to get it to work and running on the HTML page. 
+
+## Nihar's code:
+
+
+## Adam's code:
+
+
+## Rivan's code:
+
+
+# Instructions for Running
+
+
+# Grading
