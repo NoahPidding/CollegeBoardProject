@@ -44,7 +44,37 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 
 #runs Pig Latin Cipher encryption
 @app.route("/PL_encrypt", methods=['GET','POST'])
-
+def encryptionPL():
+    if request.method == 'POST':
+        form = request.form
+        #!/usr/bin/env python
+        # This program translates a string to Pig Latin
+        sentence = form["PL1"]
+        vowels = ['a', 'e', 'i', 'o', 'u']
+        # Split sentence into a list of words
+        words = sentence.split()
+        for i, word in enumerate(words):
+            # Split each word into a list of letters
+            letters = list(word)
+            first_vowel = 0
+            # Loop through letters of the word to find the first vowel
+            for j, letter in enumerate(letters):
+                if letter.lower() in vowels:
+                    first_vowel = j
+                    break
+            # Add 'yay' if the word starts with a vowel
+            if first_vowel == 0:
+                word = word + "yay"
+            # Otherwise, move the beginning consonants + 'ay' to the end of the word
+            else:
+                word = word[first_vowel:len(word)] + word[0:first_vowel] + "ay"
+            # Replace the English word with the Pig Latin word in the list
+            words[i] = word.lower()
+        # Reconstructs a new Pig Latin sentence from the list of words
+        sentence = " ".join(words)
+        return render_template("PigLatin.html", display = sentence)
+    return redirect("/PigLatin")
+    
 With the code under this app route, located in the main.py file, I was able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. I used python code I tested in REPL to implement it into the main.py file using POST in order to get it to work and running on the HTML page. 
 
 ## Nihar's code:
