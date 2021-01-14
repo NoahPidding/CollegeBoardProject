@@ -2,6 +2,13 @@
 # CollegeBoardProject
 Hello There My Young Padawan 
 General Kenobi (COUGH COUGH)
+
+# Team Goals Completed
+1) Completed the Morse code cipher and information page
+2) Completed the quiz game, including 10 questions and multiple options for answers on each question based on the different ciphers and their information pages
+3) Added a databse (in progress)
+4) We were able to successfully deploy it
+
 # CypherCryptoWebsite
 # Main.py
 This is where the flask runs and where we run all of our python code in our website. We were able to use our python code for the ciphers and run them on the website without having to use html. The main.py also runs everything with the app.routes. Very important for our website.  
