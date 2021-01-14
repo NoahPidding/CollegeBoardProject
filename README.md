@@ -2,6 +2,11 @@
 # CollegeBoardProject
 Hello There My Young Padawan 
 General Kenobi (COUGH COUGH)
+It's over Anikin, I have the high ground
+You Underestimate my power
+Don't try it
+Screams in agony
+"I HATE YOU"
 
 # Team Goals Completed
 1) Added more buttons to navigation bar
