@@ -8,11 +8,11 @@
     <!-- creates the looks of the buttons -->
     <style>
     body {
-                background-image: url(https://wallpaperaccess.com/full/353239.jpg);
-                height: 100%
-                width: 100%
-            background-size: cover;
-                background-repeat: no-repeat;
+                 background-image: url(https://wallpaperaccess.com/full/188825.jpg); no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
 
@@ -79,17 +79,17 @@
 
 {% block content %}
 
-<img width="750" height="450" src="https://www.wikihow.com/images/thumb/8/8d/Speak-Pig-Latin-Step-7-Version-2.jpg/v4-460px-Speak-Pig-Latin-Step-7-Version-2.jpg" alt="A picture of Pig Latin" class = "center"/>
+<img width="500" height="600" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/1200px-International_Morse_Code.svg.png" alt="A picture of Morse Code" class = "center"/>
 
 <!-- Explains what this page does -->
-<p>Here you can encrypt a word or phrase in Pig Latin. Either put the word or statement in English  and select to encrypt the message, and the result should show below. Decryption is unavailable due to certain words being duplicated and the limitations there are.</p>
+<p>Here you can encrypt or decrypt a word or phrase in Morse Code. Either put the word or statement in English and select to encrypt the message, and the result should show below. Only letters, no numbers. You can use this chart if you'd like to encrypt or decrypt numbers. The / is a space.</p>
 
 <form method = "post">
     <!-- user message input -->
     <p><input class="textbox1" name="MC1" required> </p>
 
     <!-- shows buttons, gives them functions -->
-    <p><button class = "button button1" formaction = "/MC_encrypt">Encrypt</button></p>
+    <p><button class = "button button1" formaction = "/MC_encrypt">Encrypt</button><button class = "button button2" formaction = "/MC_decrypt">Decrypt</button></p>
 
     <p>The result is: </p>
 
