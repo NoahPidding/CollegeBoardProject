@@ -77,7 +77,7 @@ Noah completed his assignment of implementing the Pig Latin cipher as well as th
 ## Nihar 20/20
 Nihar has done a lot for the team, as he is the most experienced coder out of us all. He has helped implement both ciphers into the project html pages using POST, while also creating the new quiz game, which included 10 questions and different options for the answers for each question. He also added the database which he is currently working on. He was also able to get the website deployed and running, and has proved very useful and helpful over the weeks, making several big and important commits to the project.  
 
-## Adam 17/20
+## Adam 18/20
 Adam was able to complete the code for the Morse code cipher in a REPL, however he could not get his Intellij to work, and as a result was unable to make any commits to the project. Because of this he was forced to email the code to others who did have Intellij up and running, and have them implement the code for him. 
 
 ## Rivan 18/20
