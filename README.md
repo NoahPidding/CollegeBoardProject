@@ -54,7 +54,9 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 With the code under this app route, located in the main.py file, I was able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. I used python code I tested in REPL to implement it into the main.py file using POST in order to get it to work and running on the HTML page. 
 
 ## Nihar's code:
+main.py lines (205-236), lines (248-301), the database.html file, the quizgame.html file, and the morsecode.html file. That was all the code I did. 
 
+eed
 
 ## Adam's code:
 
