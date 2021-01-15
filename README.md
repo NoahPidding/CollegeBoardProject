@@ -59,7 +59,7 @@ main.py lines (205-236), lines (248-301), the database.html file, the quizgame.h
 I added a database like table in the navigation bar and that was the database file. I did the POST stuff for morse code and Pig Latin, I then made all the questions and answers in the quizgame file. I was able to make a dictionary in Javascript and make it into an online quiz. With a submit button and a next/previous button. I will work on connecting that to the database and making the database function as currently I just added it only. The morsecode file is where I added the encrypt/decrypt buttons and used POST to give them their functions and allow them to encrypt and decrypt. I used Python, HTML, Javascript, CSS, and tried using SQLAlchemy but I was having trouble importing the functions and packages. The database still has a lot of work needed. 
 
 ## Adam's code:
-
+Adam coded the Python for Morse code for both the encryption and the decryption. Lines (248-301). His intellij wasn't working so he emailed his code and his work is commented "Adam's code for the morse code cipher". 
 
 ## Rivan's code:
 
