@@ -68,7 +68,9 @@ The quizgame file, the navigation bar, and the database
 
 I worked with Nihar mainly and we both worked together on the quizgame file and made the questions and answers and were able to make a Javascript dictionary. I also added the buttons on the navigation bar and was able to aid Nihar with the database. We are currently figuring out how to make the database and the quizgame file work togther. We learned that we needed a lot of POST for this and that's our biggest challenge. 
 # Instructions for Running
+https://github.com/nighthawkcoders/flask-idea-homesite/blob/master/README.md
 
+The instructions are in the readme.md on this github linked above.
 
 # Grading
 ## Noah 19/20
