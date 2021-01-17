@@ -73,6 +73,8 @@ https://github.com/nighthawkcoders/flask-idea-homesite/blob/master/README.md
 The instructions are in the readme.md on this github linked above.
 # Link to Website
 http://76.176.58.222/
+
+My WIFI turns off at 11:00 so try to grade before that time. Thank you!
 # Grading
 ## Noah 19/20
 Noah completed his assignment of implementing the Pig Latin cipher as well as the information pages. He also helped with other parts of the website including some of the styling and format. Being the scrum master, Noah also monitored the scrum board, assigning scrum members to do different tasks and setting goals for the team to complete before the deadline. 
