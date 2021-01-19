@@ -17,6 +17,7 @@
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 # Tickets 
 Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52852206)
+[Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521944)
 
 Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849626)
 
