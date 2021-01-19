@@ -15,6 +15,14 @@
 [Project (Scope)Plan](https://docs.google.com/document/d/1BwrLotvabNXMWuHMsrePWA0r2USNPfR9TTbbI6gdCSU/edit)
 
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
+# Tickets 
+Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52852206)
+
+Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849626)
+
+Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849559)
+
+Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849626)
 
 # Link to Code
 ## Noah's code:
