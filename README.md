@@ -12,6 +12,8 @@
 # Scrum Board Overview
 [Scrum Board](https://github.com/NoahPidding/CollegeBoardProject/projects/1)
 
+[Project (Scope)Plan](https://docs.google.com/document/d/1BwrLotvabNXMWuHMsrePWA0r2USNPfR9TTbbI6gdCSU/edit)
+
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
 # Link to Code
