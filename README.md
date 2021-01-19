@@ -18,17 +18,17 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 # Tickets 
 Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52852206)
 
-[Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521944)
+[Link to Ticket 2](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521944)
 
 Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849626)
 
-[Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849559)
+[Link to Ticket 2](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849559)
 
-[Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521944)
+[Link to Ticket 3](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521944)
 
 Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849559)
 
-[Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521911)
+[Link to Ticket 2](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521911)
 
 Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849626)
 
