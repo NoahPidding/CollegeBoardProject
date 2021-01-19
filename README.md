@@ -17,32 +17,32 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 #runs Pig Latin Cipher encryption
 @app.route("/PL_encrypt", methods=['GET','POST'])
 (main.py line 205 - 236)    
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236
+[Pig Latin]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236)
 
 With the code under this app route, located in the main.py file, I was able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. I used python code I tested in REPL to implement it into the main.py file using POST in order to get it to work and running on the HTML page. 
 
 ## Nihar's code:
 main.py lines (205-236), lines (248-301), the database.html file, the quizgame.html file, and the morsecode.html file. That was all the code I did. 
-[Pig latin POST](https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236)
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L248-L301
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/QuizGame.html#L1-L388
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L1-L219
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/Morsecode.html#L1-L103
+[Pig latin POST]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236)
+[Morsecode POST]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L248-L301)
+[QuizGame]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/QuizGame.html#L1-L388)
+[Database]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L1-L219)
+[Morsecode]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/Morsecode.html#L1-L103)
 
 
 I added a database like table in the navigation bar and that was the database file. I did the POST stuff for morse code and Pig Latin, I then made all the questions and answers in the quizgame file. I was able to make a dictionary in Javascript and make it into an online quiz. With a submit button and a next/previous button. I will work on connecting that to the database and making the database function as currently I just added it only. The morsecode file is where I added the encrypt/decrypt buttons and used POST to give them their functions and allow them to encrypt and decrypt. I used Python, HTML, Javascript, CSS, and tried using SQLAlchemy but I was having trouble importing the functions and packages. The database still has a lot of work needed. 
 
 ## Adam's code:
 main.py (Lines 248-301)
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L248-L301
+[Morsecode]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L248-L301)
 
 Adam coded the Python for Morse code for both the encryption and the decryption. Lines (248-301). His intellij wasn't working so he emailed his code and his work is commented "Adam's work for Morse code". Nihar did the POST work. 
 
 ## Rivan's code:
 The quizgame file, the navigation bar
 
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/QuizGame.html#L1-L388
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/home.html#L48-L68
+[Quizgame]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/QuizGame.html#L1-L388)
+[Navigation Bar]---(https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/home.html#L48-L68)
 
 I worked with Nihar mainly and we both worked together on the quizgame file and made the questions and answers and were able to make a Javascript dictionary. I also added the buttons on the navigation bar and was able to aid Nihar with the database. We are currently figuring out how to make the database and the quizgame file work togther. We learned that we needed a lot of POST for this and that's our biggest challenge. 
 # Instructions for Running
