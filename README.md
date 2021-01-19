@@ -23,7 +23,7 @@ With the code under this app route, located in the main.py file, I was able to r
 
 ## Nihar's code:
 main.py lines (205-236), lines (248-301), the database.html file, the quizgame.html file, and the morsecode.html file. That was all the code I did. 
-https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236
+[Pig latin POST](https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236)
 https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L248-L301
 https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/QuizGame.html#L1-L388
 https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L1-L219
