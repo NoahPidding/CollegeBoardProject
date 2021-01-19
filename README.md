@@ -50,6 +50,7 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 #runs Pig Latin Cipher encryption
 @app.route("/PL_encrypt", methods=['GET','POST'])
 (main.py line 205 - 236)    
+https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236
 
 With the code under this app route, located in the main.py file, I was able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. I used python code I tested in REPL to implement it into the main.py file using POST in order to get it to work and running on the HTML page. 
 
