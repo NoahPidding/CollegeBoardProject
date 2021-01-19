@@ -40,6 +40,7 @@ Adam coded the Python for Morse code for both the encryption and the decryption.
 
 ## Rivan's code:
 The quizgame file, the navigation bar
+
 https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/QuizGame.html#L1-L388
 https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/home.html#L48-L68
 
