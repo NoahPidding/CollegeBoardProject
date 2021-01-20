@@ -278,26 +278,24 @@ def decryptionMC():
     if request.method == 'POST':
         form = request.form
         while True:
-            encyptoutput =(".- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --.. ")
-            alphabet = list(encyptoutput.split(" "))
-            encryptinput=('a b c d e f g h i j k l m n o p q r s t u v w x y z ' )
-            encrypt=list(encryptinput.split(" "))
+            decrpytoutput =("a b c d e f g h i j k l m n o p q r s t u v w x y z ")
+            alphabet = list(decrpytoutput.split(" "))
+            decryptinput=(  '.- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --.. ')
+            encrypt=list(decryptinput.split(" "))
             morse=""
             userinput= form["MC1"]
+            newlist = list(userinput.lower().split(" "))
 
-            for i in userinput.lower():
-                if i.isspace():
-                    morse+=" / "
+            for i in range(len(newlist)):
+                if(newlist[i] == "/") :
+                    morse+= " "
+                    continue
+                index = encrypt.index(newlist[i])
 
-                else:
-                    counter=-1
-                    while i != encrypt[counter]:
-                        counter+=1
-                        if i == encrypt[counter]:
-                            morse+=alphabet[counter] + " "
-            sentence1= "Morse code: "+morse
-            sentence2= sentence1
-            return render_template("Morsecode.html", display = sentence2)
+                morse+=alphabet[index]
+
+            sentence= "Output: "+morse
+            return render_template("Morsecode.html", display = sentence)
     return redirect("/Morsecode")
 
 #Morse Code info
