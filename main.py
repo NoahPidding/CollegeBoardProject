@@ -323,6 +323,11 @@ def art():
 def about():
     return render_template("about.html")
 
+#
+@app.route('/cryptoapi')
+def cryptoapi():
+    return render_template("cryptoapi.html")
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)
