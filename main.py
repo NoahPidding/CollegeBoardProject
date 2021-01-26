@@ -313,16 +313,6 @@ def QuizGame():
 def Database():
     return render_template("database.html")
 
-#Art
-@app.route('/art')
-def art():
-    return render_template("art.html")
-
-#About
-@app.route('/about')
-def about():
-    return render_template("about.html")
-
 #
 @app.route('/cryptoapi')
 def cryptoapi():
