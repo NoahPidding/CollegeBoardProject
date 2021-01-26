@@ -142,6 +142,8 @@ button:hover{
 
   function showResults(){
     showingResults = true;
+    document.getElementById("newform").value = `true`;
+
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
@@ -161,6 +163,8 @@ button:hover{
         // add to the number of correct answers
         numCorrect++;
         questionCorrect[questionNumber] = true;
+        realqnum = questionNumber + 1;
+        correctquestionnums = correctquestionnums.concat(`${realqnum} `);
         // color the answers green
         answerContainers[questionNumber].style.color = 'lightgreen';
       }
@@ -169,6 +173,8 @@ button:hover{
         // color the answers red
         answerContainers[questionNumber].style.color = 'red';
         questionCorrect[questionNumber] = false;
+        realqnum = questionNumber + 1;
+        incorrectquestionnums = incorrectquestionnums.concat(`${realqnum} `);
 
 
 
@@ -178,6 +184,10 @@ button:hover{
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    document.getElementById("result").value = `${numCorrect}`;
+    document.getElementById("questionswrong").value = `${incorrectquestionnums}`;
+    document.getElementById("questionsright").value = `${correctquestionnums}`;
+    document.getElementById("attemptnum").value = `1`;
 
 
   }
@@ -231,6 +241,8 @@ button:hover{
   "",
   ""
   ];
+  var correctquestionnums = "";
+  var incorrectquestionnums = "";
   const myFeedback = [
   "Pig Latin always ends a word with -ay.",
   "The Caesar Cipher has a shift pattern of 6 in this case, so shift each letter over 6 times. For example A=G.",
@@ -379,6 +391,17 @@ button:hover{
 })();
 
 </script>
+
+
+<form action="database" method="get">
+    <input type="hidden" id="newform" name="newform" value="false"><br><br>
+    <input type="hidden" id="attemptnum" name="attemptnum" value=""><br><br>
+    <input type="hidden" id="questionswrong" name="questionswrong" value=""><br><br>
+    <input type="hidden" id="questionsright" name="questionsright" value=""><br><br>
+    <input type="hidden" id="result" name="result"><br><br>
+    <input type="submit" value="View Attempts">
+</form>
+
 
 
 <p class="output">{{ display }}</p>
