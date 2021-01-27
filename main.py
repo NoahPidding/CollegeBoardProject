@@ -318,6 +318,10 @@ def Database():
 def cryptoapi():
     return render_template("cryptoapi.html")
 
+@app.route('/easteregg')
+def easteregg():
+    return render_template("easteregghomepage.html")
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+    <link rel="stylesheet" href="">
+    <title>Easter Egg</title>
+    <style>
+        body {
+                background-image: url(https://wallpaperaccess.com/full/767366.jpg); no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+        p {
+    color: white;
+    font-size: 150%;
+    top: 300px;
+    position: relative;
+    }
+    </style>
+
+</head>
+<body>
+{% extends "easteregg.html" %}
+
+{% block content2 %}
+<center><h1 class="headertitle">Easter Egg</h1></center>
+</br>
+</br>
+</br>
+</br>
+<center><p>Welcome to our secret section of our website</p></center>
+
+{% endblock %}
+
+</body>
+</html>
