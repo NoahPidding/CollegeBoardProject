@@ -7,6 +7,34 @@
 
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
+### Team Goals Completed (Week 6)
+1) 
+
+### Easter Egg
+[Link to easter egg on website]()
+
+### Tickets (Week 6)
+Noah: [Link to Ticket]()
+
+
+Nihar: [Link to Ticket]()
+
+
+Rivan: [Link to Ticket]()
+
+
+Adam: [Link to Ticket]()
+
+### Explanation of Tickets (Week 6)
+#### Noah:
+
+#### Nihar:
+
+#### Rivan:
+
+#### Adam:
+
+
 ### Team Goals Completed (Week 4)
 1) Added more buttons to navigation bar
 2) Completed the Pig Latin cipher and information page
