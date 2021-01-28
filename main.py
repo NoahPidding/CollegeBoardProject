@@ -2,7 +2,6 @@
 
 from flask import Flask, render_template, request, redirect
 import rsa
-import requests
 
 #create "Flask"
 app = Flask(__name__)
@@ -322,15 +321,6 @@ def cryptoapi():
 @app.route('/easteregg')
 def easteregg():
     return render_template("easteregghomepage.html")
-
-@app.route('/api',  methods=['GET', 'POST'])
-def api():
-    # call to random joke web api
-    url = 'https://pagead2.googlesyndication.com/getconfig/sodar?sv=200&tid=gda&tv=r20210121&st=env'
-    response = requests.get(url)
-    # formatting variables from return
-
-    return render_template("api.html")
 
 #run file
 if __name__ == "__main__":
