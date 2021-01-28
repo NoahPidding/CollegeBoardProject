@@ -1,7 +1,13 @@
 ### (1843496- Rivan Nayak)
 
+# Scrum Board Overview
+[Scrum Board](https://github.com/NoahPidding/CollegeBoardProject/projects/1)
 
-# Team Goals Completed
+[Project (Scope)Plan](https://docs.google.com/document/d/1BwrLotvabNXMWuHMsrePWA0r2USNPfR9TTbbI6gdCSU/edit)
+
+Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
+
+### Team Goals Completed (Week 4)
 1) Added more buttons to navigation bar
 2) Completed the Pig Latin cipher and information page
 3) Completed the Morse code cipher and information page
@@ -9,13 +15,7 @@
 5) Added a databse (in progress)
 6) We were able to successfully deploy it
 
-# Scrum Board Overview
-[Scrum Board](https://github.com/NoahPidding/CollegeBoardProject/projects/1)
-
-[Project (Scope)Plan](https://docs.google.com/document/d/1BwrLotvabNXMWuHMsrePWA0r2USNPfR9TTbbI6gdCSU/edit)
-
-Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
-# Tickets 
+### Tickets (Week 4)
 Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52852206)
 
 [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-51521944)
@@ -32,8 +32,8 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 
 Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-52849626)
 
-# Link to Code
-## Noah's code:
+### Link to Code (Week 4)
+#### Noah's code:
 Runs Pig Latin Cipher encryption
 (main.py line 205 - 236)    
 
@@ -41,7 +41,7 @@ Runs Pig Latin Cipher encryption
 
 With the code under this app route, located in the main.py file, I was able to run an encryption function on our website for Pig Latin, to translate a word or phrase from English to Pig Latin. I used python code I tested in REPL to implement it into the main.py file using POST in order to get it to work and running on the HTML page. 
 
-## Nihar's code:
+#### Nihar's code:
 main.py lines (205-236), lines (248-301), the database.html file, the quizgame.html file, and the morsecode.html file. That was all the code I did. 
 
 [Pig latin POST](https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L205-L236)
@@ -57,14 +57,14 @@ main.py lines (205-236), lines (248-301), the database.html file, the quizgame.h
 
 I added a database like table in the navigation bar and that was the database file. I did the POST stuff for morse code and Pig Latin, I then made all the questions and answers in the quizgame file. I was able to make a dictionary in Javascript and make it into an online quiz. With a submit button and a next/previous button. I will work on connecting that to the database and making the database function as currently I just added it only. The morsecode file is where I added the encrypt/decrypt buttons and used POST to give them their functions and allow them to encrypt and decrypt. I used Python, HTML, Javascript, CSS, and tried using SQLAlchemy but I was having trouble importing the functions and packages. The database still has a lot of work needed. 
 
-## Adam's code:
+#### Adam's code:
 main.py (Lines 248-301)
 
 [Morsecode](https://github.com/NoahPidding/CollegeBoardProject/blob/main/main.py#L248-L301)
 
 Adam coded the Python for Morse code for both the encryption and the decryption. Lines (248-301). His intellij wasn't working so he emailed his code and his work is commented "Adam's work for Morse code". Nihar did the POST work. 
 
-## Rivan's code:
+#### Rivan's code:
 The quizgame file, the navigation bar
 
 [Quizgame](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/QuizGame.html#L1-L388)
@@ -72,6 +72,21 @@ The quizgame file, the navigation bar
 [Navigation Bar](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/home.html#L48-L68)
 
 I worked with Nihar mainly and we both worked together on the quizgame file and made the questions and answers and were able to make a Javascript dictionary. I also added the buttons on the navigation bar and was able to aid Nihar with the database. We are currently figuring out how to make the database and the quizgame file work togther. We learned that we needed a lot of POST for this and that's our biggest challenge. 
+
+My WIFI turns off at 11:00 so try to grade before that time. Thank you!
+### Grading (Week 4)
+#### Noah 19/20
+Noah completed his assignment of implementing the Pig Latin cipher as well as the information pages. He also helped with other parts of the website including some of the styling and format. Being the scrum master, Noah also monitored the scrum board, assigning scrum members to do different tasks and setting goals for the team to complete before the deadline. 
+
+#### Nihar 20/20
+Nihar has done a lot for the team, as he is the most experienced coder out of us all. He has helped implement both ciphers into the project html pages using POST, while also creating the new quiz game, which included 10 questions and different options for the answers for each question. He also added the database which he is currently working on. He was also able to get the website deployed and running, and has proved very useful and helpful over the weeks, making several big and important commits to the project.  
+
+#### Adam 18/20
+Adam was able to complete the code for the Morse code cipher in a REPL, however he could not get his Intellij to work, and as a result was unable to make any commits to the project. Because of this he was forced to email the code to others who did have Intellij up and running, and have them implement the code for him. 
+
+#### Rivan 18/20
+Rivan was able to add more buttons onto the navigation bar we currently had, in which a Pig Latin, Morse code, quiz game and database buttons were added. He also helped a little bit with the addition of the quiz game, however Nihar was the main contributor on that assignment. 
+
 # Instructions for Running
 https://github.com/nighthawkcoders/flask-idea-homesite/blob/master/README.md
 
@@ -79,19 +94,7 @@ The instructions are in the readme.md on this github linked above.
 # Link to Website
 http://76.176.58.222/
 
-My WIFI turns off at 11:00 so try to grade before that time. Thank you!
-# Grading
-## Noah 19/20
-Noah completed his assignment of implementing the Pig Latin cipher as well as the information pages. He also helped with other parts of the website including some of the styling and format. Being the scrum master, Noah also monitored the scrum board, assigning scrum members to do different tasks and setting goals for the team to complete before the deadline. 
 
-## Nihar 20/20
-Nihar has done a lot for the team, as he is the most experienced coder out of us all. He has helped implement both ciphers into the project html pages using POST, while also creating the new quiz game, which included 10 questions and different options for the answers for each question. He also added the database which he is currently working on. He was also able to get the website deployed and running, and has proved very useful and helpful over the weeks, making several big and important commits to the project.  
-
-## Adam 18/20
-Adam was able to complete the code for the Morse code cipher in a REPL, however he could not get his Intellij to work, and as a result was unable to make any commits to the project. Because of this he was forced to email the code to others who did have Intellij up and running, and have them implement the code for him. 
-
-## Rivan 18/20
-Rivan was able to add more buttons onto the navigation bar we currently had, in which a Pig Latin, Morse code, quiz game and database buttons were added. He also helped a little bit with the addition of the quiz game, however Nihar was the main contributor on that assignment. 
 # CollegeBoardProject
 Nice call my Young Padawan.
 Hello There.
