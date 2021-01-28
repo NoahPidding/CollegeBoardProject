@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template, request, redirect
 import rsa
+import requests
 
 #create "Flask"
 app = Flask(__name__)
@@ -321,6 +322,26 @@ def cryptoapi():
 @app.route('/easteregg')
 def easteregg():
     return render_template("easteregghomepage.html")
+
+@app.route('/api',  methods=['GET', 'POST'])
+def api():
+    url = "https://corona-virus-world-and-india-data.p.rapidapi.com/api"
+
+    headers = {
+        'x-rapidapi-key': "dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063",
+        'x-rapidapi-host': "corona-virus-world-and-india-data.p.rapidapi.com"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+    world = response.json().get('world_total')
+    countries = response.json().get('countries_stat')
+    """
+    print(world['total_cases'])
+    for country in countries:
+        print(country["country_name"])
+    #return countries
+    """
+    return render_template("api.html", world=world,  countries=countries)
 
 #run file
 if __name__ == "__main__":
