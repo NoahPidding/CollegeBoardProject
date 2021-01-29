@@ -323,7 +323,7 @@ def api():
     url = "https://practical-cryptography.p.rapidapi.com/ciphers/"
 
     headers = {
-        'x-rapidapi-key': "fbc28ca63amsh13b8750406531e6p1bf8a9jsnabe9c216b21b",
+        'x-rapidapi-key': "6003d427abmsh9d31278e4490ff1p18e827jsn44353caf610b",
         'x-rapidapi-host': "practical-cryptography.p.rapidapi.com"
     }
 
