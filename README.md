@@ -33,7 +33,7 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801468)
 
 ### Explanation of Tickets (Week 6)
-#### Noah:
+#### Noah: Noah's ticket is mainly for
 
 #### Nihar:
 
