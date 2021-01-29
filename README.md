@@ -8,7 +8,13 @@
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
 ### Team Goals Completed (Week 6)
-1) 
+1) Get the API done, it's our first priority
+
+2) Add a user login system to the database to make the site more secure
+
+3) Potentially add a new cipher and just make the website look better
+
+4) Make the Easter egg look good and add repsoitories, corrections, and journals
 
 ### Easter Egg
 [Link to easter egg on website](http://76.176.58.222:8080/easteregg)
