@@ -33,14 +33,17 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801468)
 
 ### Explanation of Tickets (Week 6)
-#### Noah: Noah's ticket is mainly for
+#### Noah: 
+Noah's ticket is mainly for finsihing the API. We are behind on the API and we are struggling on it and we need to get this API done or we'll keep loosing points.
 
 #### Nihar:
+Nihar's ticket is about adding extra security to the database and also making the database more user friendly. Also to make the database better. Nihar is also expected to make the Easter egg better. 
 
 #### Rivan:
+Rivan's ticket is the same as Nihar's as both Nihar and Rivan need to work together and make the database better and more secure. 
 
 #### Adam:
-
+Adam's ticket is to work with Noah and finish the API. As told before we are behind on the API and we don't want to keep loosing points. Adam is also expected to make the site better. 
 
 ### Team Goals Completed (Week 4)
 1) Added more buttons to navigation bar
