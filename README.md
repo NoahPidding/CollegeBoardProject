@@ -12,6 +12,7 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 
 ### Easter Egg
 [Link to easter egg on website](http://76.176.58.222:8080/easteregg)
+
 [Link to Website](http://76.176.58.222:8080/)
 ### Tickets (Week 6)
 Noah: [Link to Ticket]()
