@@ -332,6 +332,7 @@ def api():
     """print(response.text)"""
     return render_template("api.html", quote=quote)
 
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)
