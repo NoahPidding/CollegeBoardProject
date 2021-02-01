@@ -320,22 +320,17 @@ def easteregg():
 
 @app.route('/api',  methods=['GET', 'POST'])
 def api():
-    url = "https://practical-cryptography.p.rapidapi.com/ciphers/"
+    url = "https://quotes15.p.rapidapi.com/quotes/random/"
 
     headers = {
         'x-rapidapi-key': "fbc28ca63amsh13b8750406531e6p1bf8a9jsnabe9c216b21b",
-        'x-rapidapi-host': "practical-cryptography.p.rapidapi.com"
+        'x-rapidapi-host': "quotes15.p.rapidapi.com"
     }
 
     response = requests.request("GET", url, headers=headers)
-
-    """
-    print(world['total_cases'])
-    for country in countries:
-        print(country["country_name"])
-    #return countries
-    """
-    return render_template("api.html")
+    quote = response.json().get('content')
+    """print(response.text)"""
+    return render_template("api.html", quote=quote)
 
 #run file
 if __name__ == "__main__":

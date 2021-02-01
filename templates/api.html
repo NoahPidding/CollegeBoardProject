@@ -1,44 +1,24 @@
 <!DOCTYPE html>
-<html>
-<body>
+
 {% extends "home.html" %}
-
 {% block content %}
-{% set ciphers = ciphers %}
-{% set info = info %}
-
-<div class="row justify-content-left" style="margin: 2%;">
-    <h1><strong>Cipher REST api from rapidapi.com ...</strong></h1>
-    <form action={{url_for('api')}}>
-        <button>Refresh!</button>
+    {% set quote = quote %}
+    <h1>Random Quote</h1>
+    <p class="quote">
+        {{quote["content"]}}
+    </p>
+    <form method="POST" ID="myForm" action={{url_for('api')}} >
+        <input type="submit" value="New Quote">
     </form>
-</div>
-<div class="countries" style="height: 35vh;">
 
-    <table style="margin: 2%">
-        <tr>
-            <th>Ciphers</th>
-            <th>Information</th>
+    <style>
 
-        </tr>
-        <tr>
-            <td>Background</td>
+            h1, p, form{
+                margin-top: 2.5%;
+                margin-left: 2.5%;
+            }
 
-    </table>
-    <table style="margin: 2%">
-        <tr>
-            <th>Ciphers</th>
-        </tr>
 
-    </table>
-    <table style="margin: 2%">
-        <tr>
-            <th>Information</th>
-        </tr>
-
-    </table>
-</div>
-
+        </style>
+<p>{{quote}}</p>
 {% endblock %}
-</body>
-</html>
