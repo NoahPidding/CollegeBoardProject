@@ -8,32 +8,42 @@
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
 ### Team Goals Completed (Week 6)
-1) 
+1) Get the API done, it's our first priority
+
+2) Add a user login system to the database to make the site more secure
+
+3) Potentially add a new cipher and just make the website look better
+
+4) Make the Easter egg look good and add repsoitories, corrections, and journals
 
 ### Easter Egg
-[Link to easter egg on website]()
+[Link to easter egg on website](http://76.176.58.222:8080/easteregg)
 
+[Link to Website](http://76.176.58.222:8080/)
 ### Tickets (Week 6)
-Noah: [Link to Ticket]()
+Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801450)
 
 
-Nihar: [Link to Ticket]()
+Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801415)
 
 
-Rivan: [Link to Ticket]()
+Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
 
 
-Adam: [Link to Ticket]()
+Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801468)
 
 ### Explanation of Tickets (Week 6)
-#### Noah:
+#### Noah: 
+Noah's ticket is mainly for finsihing the API. We are behind on the API and we are struggling on it and we need to get this API done or we'll keep loosing points.
 
 #### Nihar:
+Nihar's ticket is about adding extra security to the database and also making the database more user friendly. Also to make the database better. Nihar is also expected to make the Easter egg better. 
 
 #### Rivan:
+Rivan's ticket is the same as Nihar's as both Nihar and Rivan need to work together and make the database better and more secure. 
 
 #### Adam:
-
+Adam's ticket is to work with Noah and finish the API. As told before we are behind on the API and we don't want to keep loosing points. Adam is also expected to make the site better. 
 
 ### Team Goals Completed (Week 4)
 1) Added more buttons to navigation bar
