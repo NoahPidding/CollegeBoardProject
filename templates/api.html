@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <title>API</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-
+</head>
+<body>
 {% extends "home.html" %}
 {% block content %}
-    {% set quote = quote %}
+{% set quote = quote %}
     <h1>Random Quote</h1>
     <p class="quote">
         {{quote["content"]}}
@@ -16,7 +17,8 @@
     <form method="POST" ID="myForm" action={{url_for('api')}} >
         <input type="submit" value="New Quote">
     </form>
-
-
 <p>{{quote}}</p>
+
 {% endblock %}
+</body>
+</html>
