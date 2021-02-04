@@ -7,6 +7,12 @@
 
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
+### Grading (Week 7)
+#### Noah: /25
+#### Nihar: /25
+#### Rivan: /25
+#### Adam: /25
+
 ### Team Goals Completed (Week 7)
 1) Get the API done, it's our first priority
 
@@ -36,7 +42,7 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 
 Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801482)
 
-### Explanation of Tickets (Week 6)
+### Explanation of Tickets (Week 7)
 #### Noah: 
 Noah's ticket is to work on the api work. Our plan for this ticket, as our previous strategies had failed, it to take a simple rapid api such as quotes or jokes, and display it on the page from that api. After doing so, we plan to encrypt the message displayed from the api using the ciphers on our website, and display the encrypted message below. This way we can have the api related to our website.
 
@@ -49,7 +55,7 @@ Rivan's ticket is to work on a change we want to make in our database. We had th
 #### Adam:
 Adam's ticket is working on the Easter Egg. We want to add in several buttons into the Easter Egg, such as things like our journal, project plan and TPT corrections and reflections. We also plan to add an about us page, with information about each of us, regarding both our general lives, as well as our progress over the months of coding we have had in this class. 
 
-### Link to Code (Week 4)
+### Link to Code (Week 7)
 #### Noah's code:
 
 [API work py](https://github.com/NoahPidding/CollegeBoardProject/blob/4d434cf3959a07683fce08578ce919e03cdb2bc0/main.py#L321-L356)
