@@ -19,6 +19,9 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 ### Easter Egg
 [Link to easter egg on website](http://76.176.58.222:8080/easteregg)
 
+#### Status: 
+We created an additional HTML page with a separate navigation bar and have also added several buttons onto the navigation bar, including our journal, project plan and TPT corrections and reflections. We are prepared for the things that Mr M has ready for us for this separate area. 
+
 [Link to Website](http://76.176.58.222:8080/)
 
 ### Tickets (Week 7)
@@ -35,16 +38,42 @@ Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projec
 
 ### Explanation of Tickets (Week 6)
 #### Noah: 
-Noah's ticket is mainly for finsihing the API. We are behind on the API and we are struggling on it and we need to get this API done or we'll keep loosing points.
+Noah's ticket is to work on the api work. Our plan for this ticket, as our previous strategies had failed, it to take a simple rapid api such as quotes or jokes, and display it on the page from that api. After doing so, we plan to encrypt the message displayed from the api using the ciphers on our website, and display the encrypted message below. This way we can have the api related to our website.
 
 #### Nihar:
-Nihar's ticket is about adding extra security to the database and also making the database more user friendly. Also to make the database better. Nihar is also expected to make the Easter egg better. 
+Nihar's ticket is to create a user login system, where the user can input their information and make the database more secure. Nihar will do this through the help of Mr M's example provided in class. 
 
 #### Rivan:
-Rivan's ticket is the same as Nihar's as both Nihar and Rivan need to work together and make the database better and more secure. 
+Rivan's ticket is to work on a change we want to make in our database. We had the idea to link each question the user got wrong, which is displayed in the database, to the questions on the quiz, as the user would have to go through the quiz again in order to see the correct answers. 
 
 #### Adam:
-Adam's ticket is to work with Noah and finish the API. As told before we are behind on the API and we don't want to keep loosing points. Adam is also expected to make the site better. 
+Adam's ticket is working on the Easter Egg. We want to add in several buttons into the Easter Egg, such as things like our journal, project plan and TPT corrections and reflections. We also plan to add an about us page, with information about each of us, regarding both our general lives, as well as our progress over the months of coding we have had in this class. 
+
+### Link to Code (Week 4)
+#### Noah's code:
+
+
+[]()
+
+#### Nihar's code:
+
+
+[]()
+
+[]()
+
+
+
+#### Adam's code:
+
+
+[]()
+
+
+#### Rivan's code:
+
+[]()
+
 
 ### Team Goals Completed (Week 6)
 1) Get the API done, it's our first priority
