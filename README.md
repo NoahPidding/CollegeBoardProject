@@ -52,8 +52,10 @@ Adam's ticket is working on the Easter Egg. We want to add in several buttons in
 ### Link to Code (Week 4)
 #### Noah's code:
 
+[API work py](https://github.com/NoahPidding/CollegeBoardProject/blob/4d434cf3959a07683fce08578ce919e03cdb2bc0/main.py#L321-L356)
+[API work html](https://github.com/NoahPidding/CollegeBoardProject/blob/4d434cf3959a07683fce08578ce919e03cdb2bc0/templates/api.html#L1-L54)
 
-[]()
+Noah's ticket was to work on the api, as shown above with the explanation and links to tickets and proven in the code linked above. Noah used a rapid api for quotes and was able to diplay the quotes as well as encrypt the phrases in Pig Latin. This code includes both the python code and html code used to display the quotes and encrypt them. For now, we only have one cipher being used, however, we do plan to figure out a way to use more for future tickets. 
 
 #### Nihar's code:
 
