@@ -84,6 +84,7 @@ Noah's ticket was to work on the api, as shown above with the explanation and li
 []()
 
 
+
 ### Team Goals Completed (Week 6)
 1) Get the API done, it's our first priority
 
