@@ -75,7 +75,8 @@ Noah's ticket was to work on the api, as shown above with the explanation and li
 
 #### Adam's code:
 
-[Easter Egg](https://github.com/NoahPidding/CollegeBoardProject/blob/6e38e48ea0180757cdb6579a90dc5dd7deeb5e2e/templates/easteregg.html#L14-L41)
+
+[Links to Journals / Project Plan](https://github.com/NoahPidding/CollegeBoardProject/commit/fdd09d09442b9aab07748fe5d50042f6f7fbced4)
 
 Adam's ticket had been to work on the easter egg as well as help with the API. Adam had put the links to the journals as well as the project plan for the Wildcats. One problem that Adam had faced was that he couldn't help much with developing the API of the website.
 
