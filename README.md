@@ -67,9 +67,9 @@ Noah's ticket was to work on the api, as shown above with the explanation and li
 #### Nihar's code:
 
 
-[]()
+[Datbase Link/Show Questions](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L183-L198)
 
-[]()
+[User/Login Account](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/security.html#L1-L346)
 
 
 
