@@ -84,7 +84,7 @@ Adam's ticket had been to work on the easter egg as well as help with the API. A
 
 [database questions](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L179-L198)
 
-[]()
+[User login](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/security.html#L1-L346)
 
 ### Team Goals Completed (Week 6)
 1) Get the API done, it's our first priority
