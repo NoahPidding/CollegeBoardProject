@@ -82,9 +82,9 @@ Adam's ticket had been to work on the easter egg as well as help with the API. A
 
 #### Rivan's code:
 
+[database questions](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L179-L198)
+
 []()
-
-
 
 ### Team Goals Completed (Week 6)
 1) Get the API done, it's our first priority
