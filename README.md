@@ -86,6 +86,8 @@ Adam's ticket had been to work on the easter egg as well as help with the API. A
 
 [User login](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/security.html#L1-L346)
 
+Rivan's ticket is to work on a change we want to make in our database. We had the idea to link each question the user got wrong, which is displayed in the database, to the questions on the quiz, as the user would have to go through the quiz again in order to see the correct answers.
+
 ### Team Goals Completed (Week 6)
 1) Get the API done, it's our first priority
 
