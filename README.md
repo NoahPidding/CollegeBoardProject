@@ -8,10 +8,10 @@
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
 ### Grading (Week 7)
-#### Noah: /25
-#### Nihar: /25
-#### Rivan: /25
-#### Adam: /25
+#### Noah: 25/25
+#### Nihar: 24/25
+#### Rivan: 24/25
+#### Adam: 24/25
 
 ### Team Goals Completed (Week 7)
 1) Get the API done, it's our first priority
