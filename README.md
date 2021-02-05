@@ -9,9 +9,10 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 
 ### Grading (Week 7)
 #### Noah: 25/25
-#### Nihar: 24/25
-#### Rivan: 24/25
+#### Nihar: 25/25
 #### Adam: 24/25
+#### Rivan: 23/25
+
 
 ### Team Goals Completed (Week 7)
 1) Get the API done, it's our first priority
@@ -37,10 +38,10 @@ Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projec
 Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801415)
 
 
-Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
-
-
 Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801482)
+
+
+Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
 
 ### Explanation of Tickets (Week 7)
 #### Noah: 
@@ -49,11 +50,12 @@ Noah's ticket is to work on the api work. Our plan for this ticket, as our previ
 #### Nihar:
 Nihar's ticket is to create a user login system, where the user can input their information and make the database more secure. Nihar will do this through the help of Mr M's example provided in class. 
 
+#### Adam:
+Adam's ticket is working on the Easter Egg. We want to add in several buttons into the Easter Egg, such as things like our journal, project plan and TPT corrections and reflections. We also plan to add an about us page, with information about each of us, regarding both our general lives, as well as our progress over the months of coding we have had in this class. 
+
 #### Rivan:
 Rivan's ticket is to work on a change we want to make in our database. We had the idea to link each question the user got wrong, which is displayed in the database, to the questions on the quiz, as the user would have to go through the quiz again in order to see the correct answers. 
 
-#### Adam:
-Adam's ticket is working on the Easter Egg. We want to add in several buttons into the Easter Egg, such as things like our journal, project plan and TPT corrections and reflections. We also plan to add an about us page, with information about each of us, regarding both our general lives, as well as our progress over the months of coding we have had in this class. 
 
 ### Link to Code (Week 7)
 #### Noah's code:
