@@ -355,6 +355,10 @@ def api():
     sentencepl = " ".join(words)
     return render_template("api.html", quote=quote, encryptPL=sentencepl)
 
+#account login
+@app.route('/security')
+def security():
+    return render_template("security.html")
 
 #run file
 if __name__ == "__main__":
