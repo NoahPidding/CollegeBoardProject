@@ -78,6 +78,7 @@ Noah's ticket was to work on the api, as shown above with the explanation and li
 
 []()
 
+Adam's ticket had been to work on the easter egg as well as help with the API. Adam had put the links to the journals as well as the project plan for the Wildcats. One problem that Adam had faced was that he couldn't help much with developing the API of the website.
 
 #### Rivan's code:
 
