@@ -8,10 +8,11 @@
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
 ### Grading (Week 7)
-#### Noah: /25
-#### Nihar: /25
-#### Rivan: /25
-#### Adam: /25
+#### Noah: 25/25
+#### Nihar: 25/25
+#### Adam: 24/25
+#### Rivan: 23/25
+
 
 ### Team Goals Completed (Week 7)
 1) Get the API done, it's our first priority
@@ -37,10 +38,10 @@ Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projec
 Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801415)
 
 
-Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
-
-
 Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801482)
+
+
+Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
 
 ### Explanation of Tickets (Week 7)
 #### Noah: 
@@ -49,11 +50,12 @@ Noah's ticket is to work on the api work. Our plan for this ticket, as our previ
 #### Nihar:
 Nihar's ticket is to create a user login system, where the user can input their information and make the database more secure. Nihar will do this through the help of Mr M's example provided in class. 
 
+#### Adam:
+Adam's ticket is working on the Easter Egg. We want to add in several buttons into the Easter Egg, such as things like our journal, project plan and TPT corrections and reflections. We also plan to add an about us page, with information about each of us, regarding both our general lives, as well as our progress over the months of coding we have had in this class. 
+
 #### Rivan:
 Rivan's ticket is to work on a change we want to make in our database. We had the idea to link each question the user got wrong, which is displayed in the database, to the questions on the quiz, as the user would have to go through the quiz again in order to see the correct answers. 
 
-#### Adam:
-Adam's ticket is working on the Easter Egg. We want to add in several buttons into the Easter Egg, such as things like our journal, project plan and TPT corrections and reflections. We also plan to add an about us page, with information about each of us, regarding both our general lives, as well as our progress over the months of coding we have had in this class. 
 
 ### Link to Code (Week 7)
 #### Noah's code:
@@ -67,11 +69,11 @@ Noah's ticket was to work on the api, as shown above with the explanation and li
 #### Nihar's code:
 
 
-[]()
+[Datbase Link/Show Questions](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L183-L198)
 
-[]()
+[User/Login Account](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/security.html#L1-L346)
 
-
+Nihar's ticket is to create a user login system, where the user can input their information and make the database more secure. Nihar will do this through the help of Mr M's example provided in class.
 
 #### Adam's code:
 
@@ -82,9 +84,11 @@ Adam's ticket had been to work on the easter egg as well as help with the API. A
 
 #### Rivan's code:
 
-[]()
+[database questions](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/database.html#L179-L198)
 
+[User login](https://github.com/NoahPidding/CollegeBoardProject/blob/main/templates/security.html#L1-L346)
 
+Rivan's ticket is to work on a change we want to make in our database. We had the idea to link each question the user got wrong, which is displayed in the database, to the questions on the quiz, as the user would have to go through the quiz again in order to see the correct answers.
 
 ### Team Goals Completed (Week 6)
 1) Get the API done, it's our first priority
