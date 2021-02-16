@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <style>
     body {
-    background-image: url(https://wallpaperaccess.com/full/1332238.jpg);
-    height: 100%
-    width: 100%
-    background-size: cover;
-    background-repeat: no-repeat;
+                background-image: url(https://wallpaperaccess.com/full/1332238.jpg); no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
     }
 
 
@@ -36,19 +37,27 @@
 {% set quote = quote %}
 {% set encryptPL = encryptPL %}
 {% set encryptMC = encryptMC %}
+{% set binary = binary %}
     <h1>Random Quote</h1>
     <p class="quote">
         {{quote["content"]}}
     </p>
     <form method="POST" ID="myForm" action={{url_for('api')}} >
         <input type="submit" value="New Quote">
+        <h2 style="color: mediumspringgreen">Quote:</h2>
+        <p class="output">{{quote}}</p>
     </form>
-<h2 style="color: mediumspringgreen">Quote:</h2>
-<p>{{quote}}</p>
-</br>
-<h2 style="color: pink">Pig Latin:</h2>
-<p>{{encryptPL}}</p>
-<p>{{encryptMC}}</p>
+<input id="PL" type="button" value="Pig Latin" onclick="encryptionPL()">
+    <h2 style="color: pink">Pig Latin:</h2>
+    <p class="output">{{encryptPL}}</p>
+
+<input id="BN" type="button" value="Binary" onclick="binary()">
+    <h2 style="color: aqua">Binary:</h2>
+    <p class="output">{{binary}}</p>
+]
+<input id="MC" type="button" value="Morse Code" onclick="encryptionMC()">
+<h2 style="color: purple">Morse Code:</h2>
+<p class="output">{{encryptMC}}</p>
 {% endblock %}
 </body>
 </html>

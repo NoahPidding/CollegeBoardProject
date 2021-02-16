@@ -3,6 +3,7 @@
 from flask import Flask, render_template, request, redirect
 import rsa
 import requests
+import os
 
 #create "Flask"
 app = Flask(__name__)
@@ -271,7 +272,7 @@ def encryptionMC():
                             morse+=alphabet[counter] + " "
             sentence="Morse code: "+morse
             return render_template("Morsecode.html", display = sentence)
-        return redirect("/Morsecode")
+    return redirect("/Morsecode")
 
 #runs Pig Latin Cipher decryption
 @app.route("/MC_decrypt", methods=['GET','POST'])
@@ -353,7 +354,13 @@ def api():
         words[i] = word.lower()
     # Reconstructs a new Pig Latin sentence from the list of words
     sentencepl = " ".join(words)
-    return render_template("api.html", quote=quote, encryptPL=sentencepl)
+
+    B_text = quote
+    result = ''.join(format(ord(i), 'b') for i in B_text)
+
+
+    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result)
+
 
 #account login
 @app.route('/security')
