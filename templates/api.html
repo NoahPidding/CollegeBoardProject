@@ -47,17 +47,22 @@
         <h2 style="color: mediumspringgreen">Quote:</h2>
         <p class="output">{{quote}}</p>
     </form>
-<input id="PL" type="button" value="Pig Latin" onclick="encryptionPL()">
-    <h2 style="color: pink">Pig Latin:</h2>
-    <p class="output">{{encryptPL}}</p>
+<details>
+    <summary style="color: pink; font-size: 250%">Encrypt message in Pig Latin:</summary>
+    <p>{{encryptPL}}</p>
+</details>
 
-<input id="BN" type="button" value="Binary" onclick="binary()">
-    <h2 style="color: aqua">Binary:</h2>
-    <p class="output">{{binary}}</p>
-]
-<input id="MC" type="button" value="Morse Code" onclick="encryptionMC()">
-<h2 style="color: purple">Morse Code:</h2>
-<p class="output">{{encryptMC}}</p>
+<details>
+    <summary style="color: aqua; font-size: 250%">Encrypt message in Binary:</summary>
+    <p>{{binary}}</p>
+</details>
+
+<details>
+    <summary style="color: purple; font-size: 250%">Encrypt message in Morse Code:</summary>
+    <p>{{encryptMC}}</p>
+</details>
+
 {% endblock %}
+
 </body>
 </html>
