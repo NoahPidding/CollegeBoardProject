@@ -357,9 +357,27 @@ def api():
 
     B_text = quote
     result = ''.join(format(ord(i), 'b') for i in B_text)
+    while True:
+        encryptoutput =(".- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -. --- .--. --.- .-. ... - ..- ...- .-- -..- -.-- --.. ")
+        alphabet = list(encryptoutput.split(" "))
+        encryptinput=('a b c d e f g h i j k l m n o p q r s t u v w x y z ' )
+        encrypt=list(encryptinput.split(" "))
+        morse=""
+        userinput= quote
 
+        for i in userinput.lower():
+            if i.isspace():
+                morse+=" / "
 
-    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result)
+            else:
+                counter=-1
+                while i != encrypt[counter]:
+                    counter+=1
+                    if i == encrypt[counter]:
+                        morse+=alphabet[counter] + " "
+        sentencemc="Morse code: "+morse
+
+    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=sentencemc)
 
 
 #account login
