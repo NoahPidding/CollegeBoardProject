@@ -51,15 +51,16 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 
 ### Explanation of Tickets (Week 9)
 #### Noah: 
+Noah's ticket for this week was to continue working on the API. Our plan for the API was to get quotes from a simple rapid api, then use our ciphers to encrypt the quotes and display the encrypted message below. Noah was able to successfully do this with both the Binary and Pig Latin ciphers, but is still working on getting the Morse Code and Caesar Ciphers to work. Continuing to work on the API is going to be Noah's ticket for next week too. 
 
 #### Nihar:
-
+Nihar's ticket was to finish up the user login system, in order to add more security to the database. Our database stores to scores for our Quiz Game, however it is viewable by everyone, so we want to make it more secure so only the user can see their own scores and results. 
 
 #### Adam:
-
+Adam's ticket was to work on the organization and neatness of our navigation bar. Because there is beginning to be too many things on our nav bar, we wanted to condense it so that there aren't as many things. Adam worked on this by putting all the ciphers into one dropdown nav option, as well as all the info pages. 
 
 #### Rivan:
-
+Rivan's ticket for this week was to work on the recommendations given to us by our crossover group, which they said that we needed to work on the styling of our website, which they pointed out that some of the images we had were not very visible due to the background image. So, Rivan worked on making sure everything looked good, was formatted correctly and worked as intended. 
 
 
 ### Link to Code (Week 9)
