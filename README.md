@@ -7,8 +7,37 @@
 
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
+### College Board Requirements (Week 9)
+1) Inputs: We are using user input, in which our website allows a user to input words or phrases into a textbox to then be encrypted by a cipher of their choosing
 
-### Tickets (Week 8)
+[Link to Inputs Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/PigLatin.html#L89)
+
+2) Lists: We have lists for some cyphers such as morse code where it lists out the numbers and dots and dashes and runs through the list again and again until it fully encrypted or decrypted a message
+
+[Link to Lists Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/main.py#L256-L259)
+
+3) Procedures: We are using procedures within our ciphers, in which we used the procedures we made to encrypt or decrypt the inputted messages by the user to then display a decrypted or encrypted result. 
+
+[Link to Procedures Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/caesarcipher.html#L109-L122)
+
+4) Algorithims: We are using algorithms within our ciphers, in which we used them to encrypt and decrypt the messages through code we coded ourselves. 
+
+[Link to Algorithims Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/main.py#L207-L238)
+
+5) Outputs: We are using whatever message has been inputted into a cypher to output a encrypted or decrypted message
+
+[Link to Outputs Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/PigLatin.html#L94-L97)
+
+### Crossover Suggestions (Week 9)
+1) Work on the styling of our website to make sure everything looks good and functions correctly
+
+[Link to Code]()
+
+2) Change some of the pictures so that they are more visible with backgrounds
+
+[Link to Code]()
+
+### Tickets (Week 9)
 Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801450)
 
 
@@ -20,7 +49,7 @@ Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projec
 
 Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
 
-### Explanation of Tickets (Week 7)
+### Explanation of Tickets (Week 9)
 #### Noah: 
 
 #### Nihar:
@@ -33,12 +62,12 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 
 
 
-### Link to Code (Week 7)
+### Link to Code (Week 9)
 #### Noah's code:
 
-[API work py]()
+[API work py](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/main.py#L322-L380)
 
-[API work html]()
+[API work html](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/api.html#L52-L65)
 
 
 #### Nihar's code:
@@ -53,14 +82,14 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 #### Adam's code:
 
 
-[Links to Journals / Project Plan]()
+[Links to Nav Bar Changes]()
 
 
 #### Rivan's code:
 
-[database questions]()
+[Link to Website Styling]()
 
-[User login]()
+
 
 
 ### Grading (Week 7)
