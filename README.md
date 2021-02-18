@@ -51,7 +51,7 @@ Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/proje
 
 ### Explanation of Tickets (Week 9)
 #### Noah: 
-Noah's ticket for this week was to continue working on the API. Our plan for the API was to get quotes from a simple rapid api, then use our ciphers to encrypt the quotes and display the encrypted message below. Noah was able to successfully do this with both the Binary and Pig Latin ciphers, but is still working on getting the Morse Code and Caesar Ciphers to work. Continuing to work on the API is going to be Noah's ticket for next week too. 
+Noah's ticket for this week was to continue working on the API. Our plan for the API was to get quotes from a simple rapid api, then use our ciphers to encrypt the quotes and display the encrypted message below. Noah was able to successfully do this with both the Binary, Morse Code and Pig Latin ciphers, but is still working on getting the Caesar Ciphers to work (we are not going to be putting in RSA). Continuing to work on the API is going to be Noah's ticket for next week too. 
 
 #### Nihar:
 Nihar's ticket was to finish up the user login system, in order to add more security to the database. Our database stores to scores for our Quiz Game, however it is viewable by everyone, so we want to make it more secure so only the user can see their own scores and results. 
