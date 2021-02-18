@@ -88,9 +88,9 @@ Rivan's ticket for this week was to work on the recommendations given to us by o
 
 #### Rivan's code:
 
-[Link to Website Styling]()
+[Link to Quiz Game Background](https://github.com/NoahPidding/CollegeBoardProject/blob/fa47534b29d9f4bbdcbe6a4b9671b3df4bdc94ce/templates/QuizGame.html#L15-L19)
 
-
+[Link to Morse Code Image](https://github.com/NoahPidding/CollegeBoardProject/blob/fa47534b29d9f4bbdcbe6a4b9671b3df4bdc94ce/templates/Morsecode.html#L11-L15)
 
 
 ### Grading (Week 7)
