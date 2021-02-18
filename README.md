@@ -83,7 +83,7 @@ Rivan's ticket for this week was to work on the recommendations given to us by o
 #### Adam's code:
 
 
-[Links to Nav Bar Changes]()
+[Links to Nav Bar Changes](https://github.com/NoahPidding/CollegeBoardProject/blob/017c168c8c144ed94c3bc40d8fb923838d7892d1/templates/home.html#L16-L43)
 
 
 #### Rivan's code:
