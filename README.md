@@ -9,16 +9,16 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 
 
 ### Tickets (Week 8)
-Noah: [Link to Ticket]()
+Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801450)
 
 
-Nihar: [Link to Ticket]()
+Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801415)
 
 
-Adam: [Link to Ticket]()
+Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801482)
 
 
-Rivan: [Link to Ticket]()
+Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
 
 ### Explanation of Tickets (Week 7)
 #### Noah: 
