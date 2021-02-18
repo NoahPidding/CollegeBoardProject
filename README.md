@@ -7,6 +7,62 @@
 
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
+
+### Tickets (Week 8)
+Noah: [Link to Ticket]()
+
+
+Nihar: [Link to Ticket]()
+
+
+Adam: [Link to Ticket]()
+
+
+Rivan: [Link to Ticket]()
+
+### Explanation of Tickets (Week 7)
+#### Noah: 
+
+#### Nihar:
+
+
+#### Adam:
+
+
+#### Rivan:
+
+
+
+### Link to Code (Week 7)
+#### Noah's code:
+
+[API work py]()
+
+[API work html]()
+
+
+#### Nihar's code:
+
+
+[Datbase Link/Show Questions]()
+
+[User/Login Account]()
+
+
+
+#### Adam's code:
+
+
+[Links to Journals / Project Plan]()
+
+
+#### Rivan's code:
+
+[database questions]()
+
+[User login]()
+
+
 ### Grading (Week 7)
 #### Noah: 25/25
 #### Nihar: 25/25
