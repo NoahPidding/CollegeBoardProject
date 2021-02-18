@@ -29,13 +29,13 @@ Our scrum board consists of several columns in which the scrum master (Noah) rec
 [Link to Outputs Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/PigLatin.html#L94-L97)
 
 ### Crossover Suggestions (Week 9)
-1) Work on the styling of our website to make sure everything looks good and functions correctly
+1) Work on the styling of our navigation bar and make it more condensed and organized
 
-[Link to Code]()
+[Link to Code](https://github.com/NoahPidding/CollegeBoardProject/blob/31a37b33af2ea91a9391848c33ededd641c16e7d/templates/home.html#L16-L43)
 
 2) Change some of the pictures so that they are more visible with backgrounds
 
-[Link to Code]()
+[Link to Code](https://github.com/NoahPidding/CollegeBoardProject/blob/31a37b33af2ea91a9391848c33ededd641c16e7d/templates/Morsecode.html#L82)
 
 ### Tickets (Week 9)
 Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801450)
