@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <style>
     body {
-    background-image: url(https://wallpaperaccess.com/full/1332238.jpg);
-    height: 100%
-    width: 100%
-    background-size: cover;
-    background-repeat: no-repeat;
+                background-image: url(https://wallpaperaccess.com/full/1332238.jpg); no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
     }
 
 
@@ -19,7 +20,9 @@
     h2 {color: white;}
     p {
     color: white;
-    font-size: 150%}
+    font-size: 150%;
+    word-wrap: break-word;
+   width: 1500px;}
     h {
     color: pink;
     font-size: 250%}
@@ -36,19 +39,32 @@
 {% set quote = quote %}
 {% set encryptPL = encryptPL %}
 {% set encryptMC = encryptMC %}
+{% set binary = binary %}
     <h1>Random Quote</h1>
     <p class="quote">
         {{quote["content"]}}
     </p>
     <form method="POST" ID="myForm" action={{url_for('api')}} >
         <input type="submit" value="New Quote">
+        <h2 style="color: mediumspringgreen">Quote:</h2>
+        <p class="output">{{quote}}</p>
     </form>
-<h2 style="color: mediumspringgreen">Quote:</h2>
-<p>{{quote}}</p>
-</br>
-<h2 style="color: pink">Pig Latin:</h2>
-<p>{{encryptPL}}</p>
-<p>{{encryptMC}}</p>
+<details>
+    <summary style="color: pink; font-size: 200%">Encrypt message in Pig Latin</summary>
+    <p>{{encryptPL}}</p>
+</details>
+
+<details>
+    <summary style="color: aqua; font-size: 200%">Encrypt message in Binary</summary>
+    <p>{{binary}}</p>
+</details>
+
+<details>
+    <summary style="color: purple; font-size: 200%">Encrypt message in Morse Code</summary>
+    <p>{{encryptMC}}</p>
+</details>
+
 {% endblock %}
+
 </body>
 </html>

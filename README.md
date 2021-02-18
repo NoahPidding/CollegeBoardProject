@@ -7,6 +7,92 @@
 
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
+### College Board Requirements (Week 9)
+1) Inputs: We are using user input, in which our website allows a user to input words or phrases into a textbox to then be encrypted by a cipher of their choosing
+
+[Link to Inputs Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/PigLatin.html#L89)
+
+2) Lists: We have lists for some cyphers such as morse code where it lists out the numbers and dots and dashes and runs through the list again and again until it fully encrypted or decrypted a message
+
+[Link to Lists Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/main.py#L256-L259)
+
+3) Procedures: We are using procedures within our ciphers, in which we used the procedures we made to encrypt or decrypt the inputted messages by the user to then display a decrypted or encrypted result. 
+
+[Link to Procedures Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/caesarcipher.html#L109-L122)
+
+4) Algorithims: We are using algorithms within our ciphers, in which we used them to encrypt and decrypt the messages through code we coded ourselves. 
+
+[Link to Algorithims Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/main.py#L207-L238)
+
+5) Outputs: We are using whatever message has been inputted into a cypher to output a encrypted or decrypted message
+
+[Link to Outputs Code](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/PigLatin.html#L94-L97)
+
+### Crossover Suggestions (Week 9)
+1) Work on the styling of our website to make sure everything looks good and functions correctly
+
+[Link to Code]()
+
+2) Change some of the pictures so that they are more visible with backgrounds
+
+[Link to Code]()
+
+### Tickets (Week 9)
+Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801450)
+
+
+Nihar: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801415)
+
+
+Adam: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801482)
+
+
+Rivan: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801434)
+
+### Explanation of Tickets (Week 9)
+#### Noah: 
+Noah's ticket for this week was to continue working on the API. Our plan for the API was to get quotes from a simple rapid api, then use our ciphers to encrypt the quotes and display the encrypted message below. Noah was able to successfully do this with both the Binary, Morse Code and Pig Latin ciphers, but is still working on getting the Caesar Ciphers to work (we are not going to be putting in RSA). Continuing to work on the API is going to be Noah's ticket for next week too. 
+
+#### Nihar:
+Nihar's ticket was to finish up the user login system, in order to add more security to the database. Our database stores to scores for our Quiz Game, however it is viewable by everyone, so we want to make it more secure so only the user can see their own scores and results. 
+
+#### Adam:
+Adam's ticket was to work on the organization and neatness of our navigation bar. Because there is beginning to be too many things on our nav bar, we wanted to condense it so that there aren't as many things. Adam worked on this by putting all the ciphers into one dropdown nav option, as well as all the info pages. 
+
+#### Rivan:
+Rivan's ticket for this week was to work on the recommendations given to us by our crossover group, which they said that we needed to work on the styling of our website, which they pointed out that some of the images we had were not very visible due to the background image. So, Rivan worked on making sure everything looked good, was formatted correctly and worked as intended. 
+
+
+### Link to Code (Week 9)
+#### Noah's code:
+
+[API work py](https://github.com/NoahPidding/CollegeBoardProject/blob/d591a6c151b29e88d0ff3e1525d8b7e65081a4ff/main.py#L322-L381)
+
+[API work html](https://github.com/NoahPidding/CollegeBoardProject/blob/116a644b9371889ce81f42b9f46a50e430650910/templates/api.html#L52-L65)
+
+
+#### Nihar's code:
+
+
+[Datbase Link/Show Questions]()
+
+[User/Login Account]()
+
+
+
+#### Adam's code:
+
+
+[Links to Nav Bar Changes](https://github.com/NoahPidding/CollegeBoardProject/blob/017c168c8c144ed94c3bc40d8fb923838d7892d1/templates/home.html#L16-L43)
+
+
+#### Rivan's code:
+
+[Link to Website Styling]()
+
+
+
+
 ### Grading (Week 7)
 #### Noah: 25/25
 #### Nihar: 25/25
