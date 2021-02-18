@@ -60,7 +60,7 @@ Nihar's ticket was to finish up the user login system, in order to add more secu
 Adam's ticket was to work on the organization and neatness of our navigation bar. Because there is beginning to be too many things on our nav bar, we wanted to condense it so that there aren't as many things. Adam worked on this by putting all the ciphers into one dropdown nav option, as well as all the info pages. 
 
 #### Rivan:
-Rivan's ticket for this week was to work on the recommendations given to us by our crossover group, which they said that we needed to work on the styling of our website, which they pointed out that some of the images we had were not very visible due to the background image. So, Rivan worked on making sure everything looked good, was formatted correctly and worked as intended. 
+Rivan's ticket for this week was to work on the recommendations given to us by our crossover group, which they said that we needed to work on the styling of our website, which they pointed out that some of the images we had were not very visible due to the background image. Rivan also worked on adding a background image to the quiz game to make it more appealing. 
 
 
 ### Link to Code (Week 9)
