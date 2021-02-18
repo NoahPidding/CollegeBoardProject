@@ -12,6 +12,11 @@
     @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body{
+        background-image: url(https://wallpaperaccess.com/full/802192.jpg);
+                height: 100%
+                width: 100%
+            background-size: cover;
+                background-repeat: no-repeat;
 	font-size: 20px;
 	font-family: 'Work Sans', sans-serif;
 	color: #333;
@@ -30,11 +35,13 @@ h1{
 .question{
   font-size: 30px;
   margin-bottom: 10px;
+  color: white;
 }
 .answers {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
+  color: white;
 }
 .answers label{
   display: block;
@@ -96,8 +103,9 @@ button:hover{
 <button id="previous">Previous Question</button>
 <button id="next">Next Question</button>
 <button id="submit">Submit Quiz</button>
-<div id="feedback"></div>
-<div id="results"></div>
+<div id="feedback" style="color: white"></div>
+<div id="results" style="color: white"></div>
+
 
 <script>
     (function(){
@@ -170,8 +178,8 @@ button:hover{
       }
       // if answer is wrong or blank
       else{
-        // color the answers red
-        answerContainers[questionNumber].style.color = 'red';
+        // color the answers orange
+        answerContainers[questionNumber].style.color = 'orange';
         questionCorrect[questionNumber] = false;
         realqnum = questionNumber + 1;
         incorrectquestionnums = incorrectquestionnums.concat(`${realqnum} `);
