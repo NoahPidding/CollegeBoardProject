@@ -271,7 +271,7 @@ def encryptionMC():
                             morse+=alphabet[counter] + " "
             sentence="Morse code: "+morse
             return render_template("Morsecode.html", display = sentence)
-        return redirect("/Morsecode")
+    return redirect("/Morsecode")
 
 #runs Pig Latin Cipher decryption
 @app.route("/MC_decrypt", methods=['GET','POST'])
@@ -353,7 +353,32 @@ def api():
         words[i] = word.lower()
     # Reconstructs a new Pig Latin sentence from the list of words
     sentencepl = " ".join(words)
-    return render_template("api.html", quote=quote, encryptPL=sentencepl)
+
+    B_text = quote
+    result = ''.join(format(ord(i), 'b') for i in B_text)
+
+    code = (".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..")
+    # tuple containing the Morse code for digits
+    digit = ("-----",".----","...--","....-",".....","-....","--...","---..","----.")
+    morse = ""
+    # Morse code has no cases, so work in upper case
+    text = quote.upper()
+    # look through each character in the input
+    for char in text:
+        # if it's a letter
+        if char >= "A" and char <= "Z":
+            # use ASCII code to calculate as index for code
+            # A=65, B=66... so subtracting 65 gives 0, 1...
+            morse += (code[ord(char)-65] + " ")
+        # if it's a digit
+        if char >= "0" and char <= "9":
+            # use the integer version as index for digit
+            morse += (digit[eval(char)] + " ")
+            # if it's a space
+        if char == " ":
+            morse += " / "
+
+    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=morse)
 
 #account login
 @app.route('/security')
