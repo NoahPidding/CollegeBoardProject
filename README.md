@@ -74,9 +74,9 @@ Rivan's ticket for this week was to work on the recommendations given to us by o
 #### Nihar's code:
 
 
-[Datbase Link/Show Questions](https://github.com/NoahPidding/CollegeBoardProject/blob/f3e59268d09ae64a501a7f4716bd14f62d5d76f3/templates/profile.html#L1-L69)
+[Datbase Link/Show Questions]()
 
-[User/Login Account]()
+[User/Login Account](https://github.com/NoahPidding/CollegeBoardProject/blob/f3e59268d09ae64a501a7f4716bd14f62d5d76f3/templates/profile.html#L1-L69)
 
 
 
