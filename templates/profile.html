@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <!-- incorporates style.css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- incorporates style of text -->
+    <style>
+    body {
+            background-image: url();
+        background-size: cover;
+            background-repeat: no-repeat;
+}
+
+
+    h1 {color: blue;}
+    h4{
+    text-align: right;
+    }
+    p {
+        color: ;
+        font-size: 150%}
+    h {
+        color: red;
+        font-size: 250%}
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+
+    </style>
+</head>
+<body>
+<!-- brings in the navbar -->
+{% extends "home.html" %}
+
+<!-- all the text that is in the page -->
+{% block content %}
+<h4><a style="text-align: right;" class="navbar-brand" href="/profile">Profile</a></h4>
+<p style="text-align:center;"><b>Your Profile</b></p>
+
+
+<h style="text-align:center;"><b>Bio</b></h>
+</br>
+<!-- user message input -->
+<p style="color: red;">Input Bio:</p>
+<br/>
+<p><input class="textbox1" name="bio" required></p>
+<br/>
+<h style="text-align:center;"><b>Interests</b></h>
+<p style="color: red;">Input Interests:</p>
+<p><input class="textbox2" name="interests" required> </p>
+<!-- shows buttons, gives them functions -->
+<br/>
+<br/>
+
+<!-- output -->
+<p class="output">{{ display }}</p>
+
+
+{% endblock %}
+</body>
+
+
+</html>

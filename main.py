@@ -385,6 +385,11 @@ def api():
 def security():
     return render_template("security.html")
 
+#profile
+@app.route('/profile')
+def profile():
+    return render_template("profile.html")
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)
