@@ -78,7 +78,7 @@ Rivan's ticket for this week was to work on the recommendations given to us by o
 
 [User/Login Account](https://github.com/NoahPidding/CollegeBoardProject/blob/f3e59268d09ae64a501a7f4716bd14f62d5d76f3/templates/profile.html#L1-L69)
 
-
+[Account Setup](https://github.com/NoahPidding/CollegeBoardProject/blob/8485b3dd0752022fb8f69fc06f430c3008ad0ec2/templates/security.html#L211-L219)
 
 #### Adam's code:
 
