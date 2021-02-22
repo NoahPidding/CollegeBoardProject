@@ -40,6 +40,7 @@
 {% set encryptPL = encryptPL %}
 {% set encryptMC = encryptMC %}
 {% set binary = binary %}
+{% set encryptCC = encryptCC %}
     <h1>Random Quote</h1>
     <p class="quote">
         {{quote["content"]}}
@@ -64,6 +65,10 @@
     <p>{{encryptMC}}</p>
 </details>
 
+<details>
+    <summary style="color: red; font-size: 200%">Encrypt message in Caesar Cipher (Shift Pattern=1)</summary>
+    <p>{{encryptCC}}</p>
+</details>
 {% endblock %}
 
 </body>
