@@ -378,7 +378,30 @@ def api():
         if char == " ":
             morse += " / "
 
-    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=morse)
+    text1 = quote
+    s = 1
+    def encryptionCC1(text1,s):
+        result = []
+        # transverse the plain text
+
+        # for letter in text1:
+        for i in range(0,len(text1)):
+            char = text1[i]
+            # Encrypt uppercase characters in plain text
+
+            if (char.isupper()):
+                L = chr((ord(char) + s-65) % 26 + 65)
+            # Encrypt lowercase characters in plain text
+            elif (char.islower()):
+                L = chr((ord(char) + s - 97) % 26 + 97)
+            else:
+                L = chr(ord(char))
+            result.append(L)
+        return result
+    result1=encryptionCC1(text1,s)
+    encrypted="".join(result1)
+
+    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=morse, encryptCC=encrypted)
 
 #account login
 @app.route('/security')
