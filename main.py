@@ -403,16 +403,6 @@ def api():
 
     return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=morse, encryptCC=encrypted)
 
-#account login
-@app.route('/security')
-def security():
-    return render_template("security.html")
-
-#profile
-@app.route('/profile')
-def profile():
-    return render_template("profile.html")
-
 #run file
 if __name__ == "__main__":
     app.run(debug = True)
