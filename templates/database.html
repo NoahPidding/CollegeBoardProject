@@ -198,7 +198,14 @@ showTable();
 <br/>
 <br/>
 <button onclick="deleteStorage();">Delete previous attempts</button>
-
+<script>
+var currentURL = window.location.href;
+var index = currentURL.indexOf("?newform=");
+if(index > -1) {
+         var replaceURL = currentURL.substring(0, index);
+         location.replace(replaceURL);
+}
+</script>
 
 {% endblock %}
 </body>
