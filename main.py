@@ -403,13 +403,13 @@ def api():
 
     message = quote
     keys = rsa.keyGen()
-    pubKey1 = keys[0]
-    pubKey2 = keys[1]
+    pubKey1 = 9
+    pubKey2 = 169133477
     #get encrypted and make into useable output
     encrypted = rsa.rsa(message, pubKey1, pubKey2)
     encrypted = encrypted[0]
     encrypted = ''.join(encrypted)
-
+    # Private Key = 150317579
     return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=morse, encryptCC=sentencecc, encryptRSA=encrypted)
 
 #account login
