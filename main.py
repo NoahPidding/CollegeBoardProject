@@ -399,9 +399,18 @@ def api():
             result.append(L)
         return result
     result1=encryptionCC1(text1,s)
-    encrypted="".join(result1)
+    sentencecc="".join(result1)
 
-    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=morse, encryptCC=encrypted)
+    message = quote
+    keys = rsa.keyGen()
+    pubKey1 = keys[0]
+    pubKey2 = keys[1]
+    #get encrypted and make into useable output
+    encrypted = rsa.rsa(message, pubKey1, pubKey2)
+    encrypted = encrypted[0]
+    encrypted = ''.join(encrypted)
+
+    return render_template("api.html", quote=quote, encryptPL=sentencepl, binary=result, encryptMC=morse, encryptCC=sentencecc, encryptRSA=encrypted)
 
 #account login
 @app.route('/security')
