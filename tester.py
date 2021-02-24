@@ -2,50 +2,49 @@
 import json
 
 # some dictionaries
-p1 = { "name":"John", "age":61, "city":"Eugene"}
-p2 = { "name":"Risa", "age":16, "city":"New York"}
-p3 = { "name":"Ryan", "age":16, "city":"Los Angeles"}
-p4 = { "name":"Shekar", "age":16, "city":"San Francisco"}
+p1 = { "name":"Rivan", "age":17, "city":"San Diego", "Food":"Pizza"}
+p2 = { "name":"Rini", "age":12, "city":"San Diego", "Food":"Pasta"}
+p3 = { "name":"Deba", "age":53, "city":"New Delhi", "Food":"Burger" }
+p4 = { "name":"Smita", "age":47, "city":"New Delhi", "Food":"Fries"}
+p5 = { "name":"Rajit", "age":67, "city":"Tata", "Food":"Pizza"}
 
 # a list of dictionaries
 list_of_people = [p1, p2, p3, p4]
 # write some code to Print List of people one by one
-print("List of people")
-print(type(list_of_people))
-print(list_of_people)
-for person in list_of_people:
+#print("List of people")
+#print(type(list_of_family))
+#print(list_of_family)
+#for person in list_of_family:
     print(person['name'] + "," + str(person['age']) + "," + person['city'])
-print()
+print(person['food'])
 
 
 
-# turn list to dictionary of people
-dict_people = {'people': list_of_people}
-print("Dictionary of people")
-print(type(dict_people))
-print(dict_people)
-# write some code to Print People from Dictionary
-list_of_people2 = dict_people["people"]
-for person in dict_people["people"]:
-
+# turn list to dictionary of people in your family
+family={'memeber':list_of-family}
+print("Dictionary of member")
+print(type(family))
+print(family)
+#write some code to Print People from Dictionary
 
 
 
 
 # turn dictionary to JSON (aka string)
-json_people = json.dumps(list_of_people)
+json_people = json.dumps(list_of_family)
+print("JSON")
+for char in json-people:
+    print(char,end="$")
 print("JSON People #1")
 print(type(json_people))
 print(json_people)
-# write some code to print a space between each character of JSON
-# hint use print(char, end ="-")
-# INSERT CODE HERE
+# write ome code to Print People from Dictionary
 
 
 
 
-# turn dictionary to JSON, this can be sent via a browser
-json_people = json.dumps(list_of_people)
+# turn dictionary to JSON (aka string)
+json_people = json.dumps(list_of_family)
 # the result is a JSON file:
 print("JSON People #2")
 print(type(json_people))
@@ -54,14 +53,9 @@ print(json_people)
 # INSERT CODE HERE
 print()
 
-json_people = json.dumps(list_of_people)
-# the result is a JSON file:
-print("JSON People #2")
-print(type(json_people))
-print(json_people)
-# write some code to unwind JSON using json.loads and print the people
-# INSERT CODE HERE
-list_of_people = json.loads(json_people)
-for person in list_of_people:
+
+print("JSON to Python")
+PythonList = json.loads(json_people)
+for people in PythonList:
     print(person['name'] + "," + str(person['age']) + "," + person['city'])
-print()
+print(person['food'])
