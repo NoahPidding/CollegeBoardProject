@@ -422,6 +422,11 @@ def security():
 def profile():
     return render_template("profile.html")
 
+#about us
+@app.route('/aboutus')
+def aboutus():
+    return render_template("aboutus.html")
+
 #run file
 if __name__ == "__main__":
     app.run(debug = True)
