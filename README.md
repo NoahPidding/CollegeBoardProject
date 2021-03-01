@@ -10,17 +10,8 @@
 
 Our scrum board consists of several columns in which the scrum master (Noah) records our overall team goals, as well as weekly assignments for the scrum team. The scrum master also tracks the progress made by the group as a whole, and logs whether something may still be in progress, or whether it has been completed. 
 
-# CollegeBoardProject
-Nice call my Young Padawan.
-Hello There.
-General Kenobi. (COUGH COUGH).
-It's over Anikin, I have the high ground.
-You Underestimate my power.
-Don't try it.
-Screams in agony.
-"I HATE YOU"
-
 # CypherCryptoWebsite
+CypherCrypto is a website where different ciphers such as Caesar Cipher and Binary can be used to encrypt and decrypt messages inputted by a user. Our website contains 5 different ciphers including Caesar Cipher, Binary, RSA, Morse Code and Pig Latin. There are information pages on all the ciphers which provide a history of the cipher and how it generally works. The user can then use the ciphers by inputting messages into textboxes and choosing to either encrypt or decrypt the message. There is also a multiple choice quiz game on the site, which tests the user on their knowledge of the ciphers based on the information pages of the ciphers. The stats of the quiz are then recorded on a table like database, so the user is able to see their scores, attempts an questions they got wrong. There is also a message encryptor section, which we used an API to get random quotes, then used all of our ciphers to encrypt the message to display the encrypted quote with the corresponding cipher. 
 
 ## Main.py
 This is where the flask runs and where we run all of our python code in our website. We were able to use our python code for the ciphers and run them on the website without having to use html. The main.py also runs everything with the app.routes. Very important for our website.  
