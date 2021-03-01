@@ -1,8 +1,5 @@
 ### (1843496- Rivan Nayak)
-# Instructions for Running
-https://github.com/nighthawkcoders/flask-idea-homesite/blob/master/README.md
 
-The instructions are in the readme.md on this github linked above.
 # Link to Website
 http://76.176.58.222/
 
