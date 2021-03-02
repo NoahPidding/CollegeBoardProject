@@ -22,66 +22,66 @@ The Caesar Cipher is a cipher that encrypts letters with a shift pattern. So "A"
 
 [Link to py code]() | [Runtime link to cipher](http://76.176.58.222:8080/CeaserCipher)
 
-[Link to html code]() [Runtime link to info](http://76.176.58.222:8080/CaesarCipherInfo)
+[Link to html code]() | [Runtime link to info](http://76.176.58.222:8080/CaesarCipherInfo)
 
 [Link to info page code]()
 
 ### Binary (Made by Tri 1 students)
 Binary is basically just a bunch of 1s and 0s combined. This code has functions, variables, input/output, loops, print statements,as well as a couple visuals. This code also holds several html tags(<>) such as p, h, b, etc. A bunch of tags to make up a website. It also contain several html files where we added a background picture, images, and the buttons for the game. This code does the decryption and encryption part of the project for Binary only. It however can't encrypt/decrypt spaces. It can't be fixed, so we recommend doing one word or if multiple words, don't space them. If you do space them, space=100000 
 
-[Link to py code]() [Runtime link to cipher](http://76.176.58.222:8080/binary)
+[Link to py code]() | [Runtime link to cipher](http://76.176.58.222:8080/binary)
 
-[Link to html code]() [Runtime link to info](http://76.176.58.222:8080/BinaryInfo)
+[Link to html code]() | [Runtime link to info](http://76.176.58.222:8080/BinaryInfo)
 
 [Link to info page]()
 
 ### RSA (Made by Tri 1 students)
 RSA is one of the first public-key cryptology and is widely used for secure data transmission. The acronym RSA is the initial letters of the surnames of Ron Rivest, Adi Shamir, and Leonard Adleman, who publicly described the algorithm in 1977. A user of RSA creates and then publishes a public key based on two large prime numbers, along with an auxiliary value. The prime numbers must be kept secret. More often, RSA passes encrypted shared keys for symmetric key cryptography which in turn can perform bulk encryption-decryption operations at much higher speed. It's a little similar to the Ceaser Cipher as well. The code has a few similarities too. This code does the decryption and encryption part of the project for RSA only. This code contains functions, loops, input/output, print statements, variables, arrays, and lists. It has a visual too. The html files also contains background pictures, html tags(<>), textbox, buttons, and runs its code from the main.py. 
 
-[Link to py code]() [Runtime link to cipher](http://76.176.58.222:8080/rsa)
+[Link to py code]() | [Runtime link to cipher](http://76.176.58.222:8080/rsa)
 
-[Link to html code]() [Runtime link to info](http://76.176.58.222:8080/about-rsa)
+[Link to html code]() | [Runtime link to info](http://76.176.58.222:8080/about-rsa)
 
 [Link to info page]()
 
 ### Morse Code (Made by Adam)
 Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes or dits and dahs. Morse code is named after Samuel Morse, an inventor of the telegraph. We decided to do only do the symbols as we could not figure out how to incorporate audio into the website. We were able to make both an encryption and decryption option for the morse code cipher and had a textbox for the user to input either english words or phrases, or morse code symbols.  We essentially made 2 lists, one with the english alphabet and one with the corresponding morse code symbols. Using different sections of code, we were able to iterate through each of the lists to determine whether the user's input was in morse code or english, and get the corresponding letters or symbols. Like all the other ciphers, we also provided an information page for the morse code cipher, with some background on how it came about, with some resources and an explanation of how the cipher generally works. 
 
-[Link to py code]() [Runtime link to cipher](http://76.176.58.222:8080/Morsecode)
+[Link to py code]() | [Runtime link to cipher](http://76.176.58.222:8080/Morsecode)
 
-[Link to html code]() [Runtime link to info](http://76.176.58.222:8080/Morsecodeinfo)
+[Link to html code]() | [Runtime link to info](http://76.176.58.222:8080/Morsecodeinfo)
 
 [Link to info page]()
 
 ### Pig Latin (Made by Noah)
 Pig Latin is a pretty basic language that involves a simple formula for translating words or phrases. To translate from English to Pig Latin, you are to remove everything before the first vowel of the word, moving it to the end, and adding an "ay" at the end of the word. An example of this would be "hello" turning into "ellohay". If the word begins with a vowel, then all you have to do is add "yay" to the end of the word. This means "apple" would turn into "appleyay". For the encryption of Pig Latin, it wasn't too hard. The way we approached it, was by first defining all the vowels. We then used for loops to loop through the word(s) listed by the user, to find the first vowel in each word. We used if and else statements to tell if the vowel was at the beginning, then "yay" would be added on to the end, otherwise everything before the first vowel, along with "ay" would go at the end. Decryption on the otherhand was found to be nearly impossible, as words could be the exactly the same in Pig Latin, but different in English. For example, the words smile and miles are the exact same in Pig Latin, being "ilesmay". The format of the Pig Latin cipher page and the info page are similar to the other ciphers, as it provides an encryption option on the cipher page, as well as some information about Pig Latin, some resources we used and how we coded it on the information page. 
 
-[Link to py code]() [Runtime link to cipher](http://76.176.58.222:8080/PigLatin)
+[Link to py code]() | [Runtime link to cipher](http://76.176.58.222:8080/PigLatin)
 
-[Link to html code]() [Runtime link to info](http://76.176.58.222:8080/PigLatininfo)
+[Link to html code]() | [Runtime link to info](http://76.176.58.222:8080/PigLatininfo)
 
 [Link to info page]()
 
 ## Cipher Quiz and Database (Made by Nihar and Rivan)
 
 
-[Link to py code]() [Runtime link to Cipher Quiz](http://76.176.58.222:8080/QuizGame) 
+[Link to py code]() | [Runtime link to Cipher Quiz](http://76.176.58.222:8080/QuizGame) 
 
-[Link to html code for Cipher Quiz]() [Runtime link to Database](http://76.176.58.222:8080/database)
+[Link to html code for Cipher Quiz]() | [Runtime link to Database](http://76.176.58.222:8080/database)
 
 [Link to javascript code for Database]() 
 
 ## Quote Encryptor (Made by Noah)
 
 
-[Link to py code]() [Runtime link to Quote Encryptor](http://76.176.58.222:8080/api) 
+[Link to py code]() | [Runtime link to Quote Encryptor](http://76.176.58.222:8080/api) 
 
 [Link to html code]()
 
 ## Easter Egg (Made by Adam and Noah)
 
 
-[Link to py code]() [Runtime link to Easter Egg](http://76.176.58.222:8080/easteregg)
+[Link to py code]() | [Runtime link to Easter Egg](http://76.176.58.222:8080/easteregg)
 
 [Link to html code]()
 
