@@ -20,7 +20,7 @@ Below is a list of the technicals and other things we incorporated into our webs
 ### Caesar Cipher (Made by Tri 1 students)
 The Caesar Cipher is a cipher that encrypts letters with a shift pattern. So "A" with a shift pattern of 1 would be "B" and so on. Same applies with negative numbers as well. There are separate parts for both capitol letters and lowercase letters in the ascii library and it's very important to make sure that it is separate. Same thing applies for decryption except decryption is much harder. This code does the decryption and encryption part of the project for Caesar Cipher only. This code contains functions, loops, input/output, print statements, variables, arrays, and lists. It also has a visual. The Caesar Cipher html files also contaion html tags(<>) which help build the website and structure the website. We were able to use flask and "POST" to run our previous python code, and we were able to add images and videos and change colors as well. Adding a background color was also a hassle as we had to find a good enough picture to fit well.  
 
-[Link to py code]() [Runtime link to cipher](http://76.176.58.222:8080/CeaserCipher)
+[Link to py code]() | [Runtime link to cipher](http://76.176.58.222:8080/CeaserCipher)
 
 [Link to html code]() [Runtime link to info](http://76.176.58.222:8080/CaesarCipherInfo)
 
