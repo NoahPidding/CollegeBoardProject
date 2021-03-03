@@ -63,7 +63,7 @@ Pig Latin is a pretty basic language that involves a simple formula for translat
 [Link to info page code](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/templates/PigLatininfo.html#L1-L56)
 
 ## Cipher Quiz and Database (Made by Nihar and Rivan)
-
+We decided to make the website more fun and interactive with the user, we were going to make a quiz game. This quiz game was planned to have some multiple choice questions which would be based on the information pages on the several different ciphers we had on our website. We ended up having 10 questions, with 4 options for each question. The user is able to take the quiz, and have their results displayed at the end, with the ability to see all the questions they got wrong and what the correct answer was by scrolling back through the quiz. We decided to connect the database with the cipher quiz by using javascript to have it so the user's attempts and results display in a table like format. 
 
 [Link to py code](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/main.py#L307-L315) | [Runtime link to Cipher Quiz](http://76.176.58.222:8080/QuizGame) 
 
@@ -72,14 +72,14 @@ Pig Latin is a pretty basic language that involves a simple formula for translat
 [Link to html/javascript code for Database](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/templates/database.html#L1-L221) 
 
 ## Quote Encryptor (Made by Noah)
-
+The quote encryptor is how we incorporated an API into our website. We decided to get random quotes from an API and have a button that displays a new random quote everytime it is clicked. We then had an idea to connect it to our project by using our ciphers to encrypt the message being displayed by the API. We used all 5 of our ciphers and had it so each encrypted message was hidden below the quote, with the user being able to click arrows to see each encrpyted message for each cipher. We ended up just copying each of the encrypting cipher code under the api app route and set what used to be the user input as the random quote being displayed by the API so that the message can be encrypted by each cipher. 
 
 [Link to py code](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/main.py#L321-L413) | [Runtime link to Quote Encryptor](http://76.176.58.222:8080/api) 
 
 [Link to html code](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/templates/api.html#L1-L81)
 
 ## Easter Egg (Made by Adam and Noah)
-
+Our easter egg is located at the bottom of our binary information page. It includes an About Us page, our project plan, our pair share journals, our test corrections for TPT for Trimester 2, and an option to return to the original site. 
 
 [Link to py code](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/main.py#L317-L319) | [Runtime link to Easter Egg](http://76.176.58.222:8080/easteregg)
 
