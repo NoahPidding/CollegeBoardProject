@@ -71,7 +71,7 @@ We decided to make the website more fun and interactive with the user, we were g
 
 [Link to html/javascript code for Database](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/templates/database.html#L1-L221) 
 
-## Quote Encryptor (Made by Noah)
+## Quote Encryptor (Made by Noah and Nihar)
 The quote encryptor is how we incorporated an API into our website. We decided to get random quotes from an API and have a button that displays a new random quote everytime it is clicked. We then had an idea to connect it to our project by using our ciphers to encrypt the message being displayed by the API. We used all 5 of our ciphers and had it so each encrypted message was hidden below the quote, with the user being able to click arrows to see each encrpyted message for each cipher. We ended up just copying each of the encrypting cipher code under the api app route and set what used to be the user input as the random quote being displayed by the API so that the message can be encrypted by each cipher. 
 
 [Link to py code](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/main.py#L321-L413) | [Runtime link to Quote Encryptor](http://76.176.58.222:8080/api) 
