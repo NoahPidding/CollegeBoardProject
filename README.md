@@ -187,14 +187,6 @@ Rivan's ticket for this week was to work on the recommendations given to us by o
 
 4) Idea for API, get a simple rapid api (like quotes or jokes) and use the ciphers in our website to encrypt them
 
-## Easter Egg
-[Link to easter egg on website](http://76.176.58.222:8080/easteregg)
-
-### Status: 
-We created an additional HTML page with a separate navigation bar and have also added several buttons onto the navigation bar, including our journal, project plan and TPT corrections and reflections. We are prepared for the things that Mr M has ready for us for this separate area. 
-
-[Link to Website](http://76.176.58.222:8080/)
-
 ## Tickets (Week 7)
 Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801450)
 
@@ -263,10 +255,6 @@ Rivan's ticket is to work on a change we want to make in our database. We had th
 
 4) Make the Easter egg look good and add repsoitories, corrections, and journals
 
-## Easter Egg
-[Link to easter egg on website](http://76.176.58.222:8080/easteregg)
-
-[Link to Website](http://76.176.58.222:8080/)
 ## Tickets (Week 6)
 Noah: [Link to Ticket](https://github.com/NoahPidding/CollegeBoardProject/projects/1#card-53801450)
 
