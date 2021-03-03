@@ -85,6 +85,7 @@ Our easter egg is located at the bottom of our binary information page. It inclu
 
 [Link to html code](https://github.com/NoahPidding/CollegeBoardProject/blob/ce05c6a7a609079996f5d50755941a6ee874e986/templates/easteregg.html#L1-L52)
 
+# Week 9
 ## College Board Requirements (Week 9)
 1) Inputs: We are using user input, in which our website allows a user to input words or phrases into a textbox to then be encrypted by a cipher of their choosing
 
@@ -170,7 +171,7 @@ Rivan's ticket for this week was to work on the recommendations given to us by o
 
 [Link to Morse Code Image](https://github.com/NoahPidding/CollegeBoardProject/blob/fa47534b29d9f4bbdcbe6a4b9671b3df4bdc94ce/templates/Morsecode.html#L11-L15)
 
-
+# Week 7
 ## Grading (Week 7)
 ### Noah: 25/25
 ### Nihar: 25/25
@@ -246,6 +247,7 @@ Adam's ticket had been to work on the easter egg as well as help with the API. A
 
 Rivan's ticket is to work on a change we want to make in our database. We had the idea to link each question the user got wrong, which is displayed in the database, to the questions on the quiz, as the user would have to go through the quiz again in order to see the correct answers.
 
+# Week 6
 ## Team Goals Completed (Week 6)
 1) Get the API done, it's our first priority
 
@@ -280,6 +282,7 @@ Rivan's ticket is the same as Nihar's as both Nihar and Rivan need to work toget
 ### Adam:
 Adam's ticket is to work with Noah and finish the API. As told before we are behind on the API and we don't want to keep loosing points. Adam is also expected to make the site better. 
 
+# Week 4
 ## Team Goals Completed (Week 4)
 1) Added more buttons to navigation bar
 2) Completed the Pig Latin cipher and information page
