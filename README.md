@@ -1,7 +1,7 @@
 ### (1843496- Rivan Nayak)
 
 # Link to Website
-[Link to CypherCrypto](http://76.176.58.222:8080/)
+[CypherCrypto.cf](http://76.176.58.222:8080/)
 
 # Scrum Board Overview
 [Scrum Board](https://github.com/NoahPidding/CollegeBoardProject/projects/1)
