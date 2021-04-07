@@ -1,50 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='rsa.css') }}">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='rsa.css') }}">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">ProjectCC</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="nav-link dropdown-link" href="/">Home</a>
-    <div class="dropdown-mine">
-        <span>Caesar Cipher</span>
-        <div class="dropdown-content-mine">
-            <a class="dropdown-link" href="/CaesarCipherInfo"><span>Information</span></a>
-            <a class="dropdown-link" href="/CeaserCipher"><span>Cipher</span></a>
-        </div>
-    </div>
-    <div class="nav-link dropdown-link dropdown-mine">
-        <span>Binary</span>
-        <div class="dropdown-content-mine">
-            <a class="dropdown-link" href="/BinaryInfo"><span>Information</span></a>
-            <a class="dropdown-link" href="/binary"><span>Cipher</span></a>
-        </div>
-    </div>
-    <div class="dropdown-mine">
-        <span>RSA</span>
-        <div class="dropdown-content-mine">
-            <a class="dropdown-link" href="/about-rsa"><span>Information</span></a>
-            <a class="dropdown-link" href="/rsa"><span>Cipher</span></a>
+  <a class="navbar-brand" href="/">ProjectCC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="nav-link dropdown-link" href="/">Home</a>
 
-        </div>
+  <div class="nav-link dropdown-link dropdown-mine">
+    <span>Ciphers</span>
+    <div class="dropdown-content-mine">
+      <a class="dropdown-link" href="/rsa"><span>RSA</span></a>
+      <br/>
+      <a class="dropdown-link" href="/binary"><span>Binary</span></a>
+      <br/>
+      <a class="dropdown-link" href="/CeaserCipher"><span>Caesar Cipher</span></a>
+      <br/>
+      <a class="dropdown-link" href="/PigLatin"><span>Pig Latin</span></a>
+      <br/>
+      <a class="dropdown-link" href="/Morsecode"><span>Morse Code</span></a>
     </div>
-    <div class="nav-link dropdown-link dropdown-mine">
-        <span>Code</span>
-        <div class="dropdown-content-mine">
-            <a class="dropdown-link" href="https://repl.it/@1846292/CipherCrypto?lite=true" target="_blank"><span>Repl</span></a>
-            <br/>
-            <a class="dropdown-link" href="https://github.com/NiharMarar/CypherCyrptoWebProject2" target="_blank"><span>Github</span></a>
+  </div>
 
-        </div>
+  <div class="nav-link dropdown-link dropdown-mine">
+    <span>Information</span>
+    <div class="dropdown-content-mine">
+      <a class="dropdown-link" href="/about-rsa"><span>RSA</span></a>
+      <br/>
+      <a class="dropdown-link" href="/BinaryInfo"><span>Binary</span></a>
+      <br/>
+      <a class="dropdown-link" href="/CaesarCipherInfo"><span>Caesar Cipher</span></a>
+      <br/>
+      <a class="dropdown-link" href="/PigLatininfo"><span>Pig Latin</span></a>
+      <br/>
+      <a class="dropdown-link" href="/Morsecodeinfo"><span>Morse Code</span></a>
     </div>
+  </div>
+
+  <div class="nav-link dropdown-link dropdown-mine">
+    <span>Code</span>
+    <div class="dropdown-content-mine">
+      <a class="dropdown-link" href="https://repl.it/@1846292/CipherCrypto?lite=true" target="_blank"><span>Repl</span></a>
+      <br/>
+      <a class="dropdown-link" href="https://github.com/NiharMarar/CypherCyrptoWebProject2" target="_blank"><span>Github</span></a>
+      <br/>
+      <a class="dropdown-link" href="https://github.com/NoahPidding/CollegeBoardProject" target="_blank"><span>Github 2.0</span></a>
+    </div>
+  </div>
+
+  <div class="nav-link dropdown-link dropdown-mine">
+    <span>More Practice</span>
+    <div class="dropdown-content-mine">
+      <a class="dropdown-link" href="/QuizGame" target="_blank"><span>Cipher Quiz</span></a>
+      <br/>
+      <a class="dropdown-link" href="/database" target="_blank"><span>Quiz Stats</span></a>
+      <br/>
+      <a class="dropdown-link" href="/api" target="_blank"><span>Quote Encryptor</span></a>
+    </div>
+  </div>
+
 </nav>
-
+<!-- allows menu bar to be used in other pages w/out copy/paste updating -->
 {% block content %}{% endblock %}
 </body>
 </html>
+
