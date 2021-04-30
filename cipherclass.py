@@ -1,9 +1,10 @@
 import rsa
 
+
 class Cipher:
     def __init__(self, quote):
         self._quote = quote
-        # stack of functions that encrypt
+        # Stack of functions that encrypt
         self._piglatin = self.piglatin()
         self._binary = self.binary()
         self._morse = self.morse()
@@ -12,7 +13,7 @@ class Cipher:
 
     def piglatin(self):
         words = self.quote.split()
-        # constant definition for encryption
+        # Constant definition for encryption
         vowels = ['a', 'e', 'i', 'o', 'u']
         for i, word in enumerate(words):
             # Split each word into a list of letters
@@ -42,10 +43,9 @@ class Cipher:
     def quote(self):
         return self._quote
 
-
     def binary(self):
-        B_text = self._quote
-        return ''.join(format(ord(i), 'b') for i in B_text)
+        text = self._quote
+        return ''.join(format(ord(i), 'b') for i in text)
 
     @property
     def bin(self):
@@ -55,24 +55,27 @@ class Cipher:
         # Morse code has no lower case, so work in upper case
         text = self.quote.upper()
         # constant definitions for encryption
-        code = (".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..")
-        digit = ("-----",".----","...--","....-",".....","-....","--...","---..","----.")
-        # look through each character in the input and add morse code to "morse"
+        code = (
+            ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---",
+            ".--.",
+            "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..")
+        digit = ("-----", ".----", "...--", "....-", ".....", "-....", "--...", "---..", "----.")
+        # Look through each character in the input and add morse code to "morse"
         morse = ""
         for char in text:
-            # if it's a letter
-            if char >= "A" and char <= "Z":
-                # use ASCII code to calculate as index for code
+            # If it's a letter
+            if "A" <= char <= "Z":
+                # Use ASCII code to calculate as index for code
                 # A=65, B=66... so subtracting 65 gives 0, 1...
-                morse += (code[ord(char)-65] + " ")
+                morse += (code[ord(char) - 65] + " ")
             # if it's a digit
-            if char >= "0" and char <= "9":
-                # use the integer version as index for digit
+            if "0" <= char <= "9":
+                # Use the integer version as index for digit
                 morse += (digit[eval(char)] + " ")
-                # if it's a space
+                # If it's a space
             if char == " ":
                 morse += " / "
-        return "Morse code: "+morse
+        return morse
 
     @property
     def morc(self):
@@ -81,22 +84,22 @@ class Cipher:
     def caesar(self):
         # "S" is the key where you shift the letters, or the Caesar Cipher offset
         s = 1
-        # transverse the plain text
+        # Transverse the plain text
         text = self.quote
-        # for letter in text1:
+        # For letter in text1:
         result = []
-        for i in range(0,len(text)):
+        for i in range(0, len(text)):
             char = text[i]
             # Encrypt uppercase characters in plain text
 
-            if (char.isupper()):
-                L = chr((ord(char) + s-65) % 26 + 65)
+            if char.isupper():
+                let = chr((ord(char) + s - 65) % 26 + 65)
             # Encrypt lowercase characters in plain text
-            elif (char.islower()):
-                L = chr((ord(char) + s - 97) % 26 + 97)
+            elif char.islower():
+                let = chr((ord(char) + s - 97) % 26 + 97)
             else:
-                L = chr(ord(char))
-            result.append(L)
+                let = chr(ord(char))
+            result.append(let)
         return result
 
     @property
@@ -106,10 +109,10 @@ class Cipher:
     def rsa(self):
         message = self.quote
         # keys = rsa.keyGen()
-        pubKey1 = 9
-        pubKey2 = 169133477
-        #get encrypted and make into useable output
-        encrypted = rsa.rsa(message, pubKey1, pubKey2)
+        pubkey1 = 9
+        pubkey2 = 169133477
+        # Get encrypted and make into usable output
+        encrypted = rsa.rsa(message, pubkey1, pubkey2)
         encrypted = encrypted[0]
         encrypted = ''.join(encrypted)
         return encrypted
@@ -118,16 +121,17 @@ class Cipher:
     def rsac(self):
         return self._rsa
 
+
 if __name__ == "__main__":
     cipher = Cipher("A man a plan a canal panama")
     print(cipher.quote)
     # The "," separates the words
-    print(cipher.pig)
+    print("Pig Latin:", cipher.pig)
     # Binary is one continuous string of 1s and 0s
-    print(cipher.bin)
+    print("Binary:", cipher.bin)
     # The "/" means a space for the encryption
-    print(cipher.morc)
+    print("Morse Code:", cipher.morc)
     # The "," separates the letters
-    print(cipher.caesarc)
+    print("Caesar Cipher:", cipher.caesarc)
     # The ")" means a space for the encryption
-    print(cipher.rsac)
+    print("RSA:", cipher.rsac)
