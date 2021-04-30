@@ -11,10 +11,9 @@ class Cipher:
         self._piglatin = self.piglatin()
         self._binary = self.binary()
         self._morse = self.morse()
-        text1 = quote
-        s = 1
-        result1=self.caesar(text1,s)
-        sentencecc="".join(result1)
+        self._caesar = self.caesar()
+        # result1=self.caesar(text1,s)
+        # sentencecc="".join(result1)
         # self.rsa()
 
     def piglatin(self):
@@ -81,13 +80,15 @@ class Cipher:
     def morc(self):
         return self._morse
 
-    def caesar(self,text1,s):
-        result = []
+    def caesar(self):
+        # "S" is the key where you shift the letters, or the Caesar Cipher offset
+        s = 1
         # transverse the plain text
-
+        text = self.quote
         # for letter in text1:
-        for i in range(0,len(text1)):
-            char = text1[i]
+        result = []
+        for i in range(0,len(text)):
+            char = text[i]
             # Encrypt uppercase characters in plain text
 
             if (char.isupper()):
@@ -100,7 +101,10 @@ class Cipher:
             result.append(L)
         return result
 
-"""
+    @property
+    def caesarc(self):
+        return self._caesar
+
     def rsa(self):
         message = quote
         keys = rsa.keyGen()
@@ -111,7 +115,6 @@ class Cipher:
         encrypted = encrypted[0]
         encrypted = ''.join(encrypted)
         # Private Key = 150317579
-"""
 
 if __name__ == "__main__":
     cipher = Cipher("A man a plan a canal panama")
@@ -119,3 +122,4 @@ if __name__ == "__main__":
     print(cipher.pig)
     print(cipher.bin)
     print(cipher.morc)
+    print(cipher.caesarc)
