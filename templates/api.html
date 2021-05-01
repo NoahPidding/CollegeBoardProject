@@ -36,44 +36,36 @@
 <body>
 {% extends "home.html" %}
 {% block content %}
-{% set quote = quote %}
-{% set encryptPL = encryptPL %}
-{% set encryptMC = encryptMC %}
-{% set binary = binary %}
-{% set encryptCC = encryptCC %}
-{% set encryptRSA = encryptRSA %}
     <h1>Random Quote</h1>
     <p class="quote">
-        {{quote["content"]}}
+        {{cipher.quote}}
     </p>
     <form method="POST" ID="myForm" action={{url_for('api')}} >
         <input type="submit" value="New Quote">
-        <h2 style="color: mediumspringgreen">Quote:</h2>
-        <p class="output">{{quote}}</p>
     </form>
 <details>
     <summary style="color: pink; font-size: 200%">Encrypt message in Pig Latin</summary>
-    <p>{{encryptPL}}</p>
+    <p>{{cipher.pig}}</p>
 </details>
 
 <details>
     <summary style="color: aqua; font-size: 200%">Encrypt message in Binary</summary>
-    <p>{{binary}}</p>
+    <p>{{cipher.bin}}</p>
 </details>
 
 <details>
     <summary style="color: purple; font-size: 200%">Encrypt message in Morse Code</summary>
-    <p>{{encryptMC}}</p>
+    <p>{{cipher.morc}}</p>
 </details>
 
 <details>
     <summary style="color: red; font-size: 200%">Encrypt message in Caesar Cipher (Shift Pattern=1)</summary>
-    <p>{{encryptCC}}</p>
+    <p>{{cipher.caesarc}}</p>
 </details>
 
 <details>
     <summary style="color: orange; font-size: 200%">Encrypt message in RSA (Public Key 1 = "9"   Public Key 2 = "169133477"   Private Key = "150317579")</summary>
-    <p>{{encryptRSA}}</p>
+    <p>{{cipher.rsac}}</p>
 </details>
 {% endblock %}
 
