@@ -15,7 +15,7 @@ list_of_people = [p1, p2, p3, p4]
 #print(type(list_of_family))
 #print(list_of_family)
 #for person in list_of_family:
-    print(person['name'] + "," + str(person['age']) + "," + person['city'])
+print(person['name'] + "," + str(person['age']) + "," + person['city'])
 print(person['food'])
 
 
